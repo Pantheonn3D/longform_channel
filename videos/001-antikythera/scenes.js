@@ -255,7 +255,7 @@ SCENES.sea = (g, s) => {
       const [gx, gy] = project(22.2, 37.6, box); text(g, "Greece", gx, gy, { size: 20, color: C.mist, align: "center" });
       g.restore(); g.restore();
     }
-    caption(g, t, .6, s.dur - 1, ["Spring 1900", "Sponge divers from Symi, sheltering from a storm"]);
+    caption(g, t, .6, s.dur - 1, ["1900", "Sponge divers from Symi, sheltering from a storm"]);
     return;
   }
   // dive: underwater, a helmet diver descends
@@ -448,7 +448,7 @@ SCENES.orrery = (g, s) => {
     const k = vis(t, s.b(1), 1e9, .6);
     if (k > 0) {
       g.save(); g.globalAlpha = k; g.fillStyle = C.brass; g.fillRect(1330, 700, 50, 3);
-      text(g, "Nothing comparable survives", 1330, 752, { size: 32, color: C.bone, weight: 550 });
+      text(g, "Nothing this complex survives", 1330, 752, { size: 32, color: C.bone, weight: 550 });
       text(g, "for more than a thousand years", 1330, 796, { size: 32, color: C.mist });
       g.restore();
     }
@@ -1198,7 +1198,7 @@ SCENES.games = (g, s) => {
     const pa = -Math.PI / 2 + prog(t, s.w(0, "four"), s.dur - s.w(0, "four") - .5, x => x) * TAU;
     g.strokeStyle = C.brass; g.lineWidth = 5; g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + R * .9 * Math.cos(pa), cy + R * .9 * Math.sin(pa)); g.stroke();
     text(g, "Games dial", cx, cy - R - 90, { size: 44, kind: "serif", weight: 600, align: "center" });
-    text(g, "Olympia · Nemea · Isthmia · Pythia · Naa", cx, cy + R + 70, { size: 28, align: "center", color: C.mist });
+    text(g, "games named include Olympia, Nemea, Isthmia, Pythia, Naa", cx, cy + R + 70, { size: 28, align: "center", color: C.mist });
     text(g, "Olympic Games", cx, cy + R + 118, { size: 32, align: "center", color: C.brass, weight: 600, alpha: vis(t, s.w(0, "Olympics") - .3, 1e9, .5) });
     g.restore();
   }
@@ -1237,8 +1237,11 @@ SCENES.front = (g, s) => {
   zodiacRing(g, cx, cy, R - 170, R - 80, zk, 18);
   if (st === "rings") {
     callout(g, vis(t, s.w(0, "inner") - .2, 1e9), cx + (R - 125) * Math.cos(-.3), cy + (R - 125) * Math.sin(-.3), 1500, 330, "zodiac", C.bone, 32);
-    callout(g, vis(t, s.w(0, "outer") - .2, 1e9), cx + (R - 35) * Math.cos(.35), cy + (R - 35) * Math.sin(.35), 1500, 700, "Egyptian calendar: 365 days", C.bone, 32);
-    text(g, "turned by hand for leap days", 1512, 750, { size: 26, color: C.mist, alpha: vis(t, s.w(0, "leap") - .3, 1e9, .5) });
+    callout(g, vis(t, s.w(0, "outer") - .2, 1e9), cx + (R - 35) * Math.cos(.35), cy + (R - 35) * Math.sin(.35), 1500, 700, "Egyptian calendar months", C.bone, 32);
+    text(g, "365 days, and movable", 1512, 750, { size: 26, color: C.mist, alpha: vis(t, s.w(0, "turned") - .3, 1e9, .5) });
+    const dk = vis(t, s.w(0, "2024") - .3, 1e9, .5);
+    text(g, "or a 354-day lunar count?", 1512, 800, { size: 26, color: C.signal, alpha: dk });
+    text(g, "still debated", 1512, 836, { size: 26, color: C.signal, alpha: dk });
     return;
   }
   const day = T * 4;
@@ -1259,7 +1262,11 @@ SCENES.front = (g, s) => {
       g.restore();
       if (st === "planets") text(g, n, 1480, 330 + i * 64, { size: 38, kind: "serif", weight: 540, color: col, alpha: k });
     });
-    if (st === "planets") text(g, "none of the planetary gears survive", 1480, 700, { size: 28, color: C.signal, weight: 550, alpha: vis(t, s.w(0, "None") - .3, 1e9, .5) });
+    if (st === "planets") {
+      const nk = vis(t, s.w(0, "Almost") - .3, 1e9, .5);
+      text(g, "almost none of the", 1480, 700, { size: 28, color: C.signal, weight: 550, alpha: nk });
+      text(g, "planetary gearing survives", 1480, 738, { size: 28, color: C.signal, weight: 550, alpha: nk });
+    }
   }
   // Sun and Moon pointers
   const sr = R - 180;
@@ -1353,7 +1360,7 @@ SCENES.timeline = (g, s) => {
       const xa = yr(-60), xb = lerp(xa, yr(1330), gk);
       g.fillStyle = "rgba(239,91,63,.12)"; g.fillRect(xa, y0 - 36, xb - xa, 72);
       g.strokeStyle = C.signal; g.lineWidth = 2; g.strokeRect(xa, y0 - 36, xb - xa, 72);
-      text(g, "no surviving gearing like it", (xa + yr(1330)) / 2, y0 + 110, { size: 30, align: "center", color: C.signal, weight: 600, alpha: prog(t, s.w(0, "complexity") - .3, .6) });
+      text(g, "nothing this complex survives", (xa + yr(1330)) / 2, y0 + 110, { size: 30, align: "center", color: C.signal, weight: 600, alpha: prog(t, s.w(0, "complexity") - .3, .6) });
     }
   }
 };

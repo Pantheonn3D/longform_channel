@@ -8,7 +8,7 @@ Facts and sources: see sources.md in this folder.
 # A wreck off Antikythera
 
 @shot sea {"mode": "storm"}
-In the spring of 1900, a boat full of sponge divers was running for cover. A storm had pushed them off course, and they sheltered behind a small rocky island between Crete and mainland Greece. Its name was Antikythera.
+In 1900, a boat full of sponge divers was running for cover. A storm had pushed them off course, and they sheltered behind a small rocky island between Crete and mainland Greece. Its name was Antikythera.
 
 @shot sea {"mode": "dive"}
 While they waited for the weather to turn, one of the divers went down to look for sponges. He came back up badly shaken, saying the seabed was covered in bodies.
@@ -25,7 +25,7 @@ Inside that lump were gears. Dozens of them, some with teeth barely more than a 
 @shot orrery {"mode": "cold"}
 It is a machine for calculating the sky. Turn a handle, and it shows you where the Sun and Moon will be on any day you choose, what phase the Moon will be in, and which months will bring an eclipse.
 
-Nothing with this kind of gearing survives from anywhere in the world for more than a thousand years afterwards. This is how it worked, one gear at a time.
+Nothing with gearing this complex survives from anywhere in the world for more than a thousand years afterwards. This is how it worked, one gear at a time.
 
 @shot title {"title": "The Antikythera Mechanism", "sub": "A working model of the heavens"}
 // title card: no narration, music sting only
@@ -133,13 +133,13 @@ Some cells carry small inscriptions, glyphs marking an expected eclipse of the S
 # The face of the cosmos
 
 @shot front {"stage": "rings"}
-The front of the mechanism had one large dial with two rings. The inner ring is the zodiac. The outer ring is the Egyptian calendar of three hundred and sixty five days. That calendar ignored leap days, so its ring could be turned by hand to stay aligned with the Sun.
+The front of the mechanism had one large dial with two rings. The inner ring is the zodiac. The outer ring carries the months of the Egyptian calendar, a calendar of three hundred and sixty five days, and it could be turned to keep it aligned with the Sun. A 2024 study of the holes beneath that ring suggests it may have counted a lunar year of three hundred and fifty four days instead, so exactly how it was used is still debated.
 
 @shot front {"stage": "pointers"}
 Pointers showed the positions of the Sun and the Moon against the zodiac. And a small ball, half pale and half dark, turned to show the Moon's phase. Its rotation came from a gear arrangement that takes the difference between the Moon's motion and the Sun's.
 
 @shot front {"stage": "planets"}
-The inscriptions also name the five planets known in antiquity: Mercury, Venus, Mars, Jupiter and Saturn. None of the planetary gears survive, so what came next is reconstruction.
+The inscriptions also name the five planets known in antiquity: Mercury, Venus, Mars, Jupiter and Saturn. Almost none of the planetary gearing survives, so what comes next is reconstruction.
 
 @shot number {"n": "462", "then": "442", "label": "Venus", "label2": "Saturn"}
 In 2021, a team at University College London published a proposed design for the whole front of the machine. Their starting point was two numbers found in the inscriptions: four hundred and sixty two, associated with Venus, and four hundred and forty two, with Saturn. Both are long, accurate cycles for those planets.
@@ -153,7 +153,7 @@ From those cycles they designed gear trains that fit in the space available, usi
 We don't know who made it. The Roman orator Cicero describes a bronze sphere built by Archimedes that showed the motions of the Sun, Moon and planets, and he mentions a similar device made by the philosopher Posidonius on Rhodes. Neither has survived. The Antikythera mechanism is the only machine of its kind we have.
 
 @shot timeline {"stage": "dates"}
-The ship sank around sixty BC. Studies of the eclipse dial suggest its cycle starts in 205 BC. That's when the calendar begins, which is not necessarily when the machine was built, but it places the design in the second century BC, around the time of Hipparchus.
+The ship sank around sixty BC. Studies of the eclipse dial suggest its cycle starts in 205 BC. That's when the calendar begins, which is not necessarily when the machine was built. Most estimates for the machine itself fall in the second century BC, the century of the astronomer Hipparchus.
 
 @shot timeline {"stage": "gap"}
 And then the trail goes cold. Gearing of this complexity doesn't appear again in the surviving record until the astronomical clocks of medieval Europe, in the fourteenth century.

@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Video file | `out/001-antikythera.mp4` (1920×1080, 30 fps, 12:17, loudness-normalised to −14 LUFS) |
+| Video file | `out/001-antikythera.mp4` (1920×1080, 30 fps, 12:28, loudness-normalised to −14 LUFS) |
 | Thumbnails | `thumbnail/thumb-a.jpg`, `thumb-b.jpg`, `thumb-c.jpg` (1280×720) |
 | Captions | `captions.en.srt` |
 | Narration | Scratch voice (Kokoro "af_heart"). Swap in ElevenLabs before publishing if you can; see `README.md`. |
@@ -36,22 +36,23 @@ In 1900, sponge divers found an ancient shipwreck off the Greek island of Antiky
 Chapters
 0:00 A wreck off Antikythera
 1:27 The lump in the drawer
-2:17 Seeing inside
-3:42 The problem with the sky
+2:16 Seeing inside
+3:41 The problem with the sky
 5:06 How gears do arithmetic
-6:04 The Moon that speeds up
-7:25 The back of the box
-8:43 The face of the cosmos
-10:12 Who built it
-11:07 A working model
+6:03 The Moon that speeds up
+7:24 The back of the box
+8:42 The face of the cosmos
+10:21 Who built it
+11:19 A working model
 
-A few things on screen are illustrative, and labelled that way: the Greek lettering, the exact eclipse-glyph positions, and the planetary display on the front dial, which is a 2021 proposed reconstruction (none of the planetary gears survive).
+A few things on screen are illustrative, and labelled that way: the Greek lettering, the exact eclipse-glyph positions, and the planetary display on the front dial, which is a 2021 proposed reconstruction (almost none of the planetary gearing survives).
 
 Sources
 Freeth et al. (2006), Decoding the ancient Greek astronomical calculator known as the Antikythera Mechanism. Nature 444. https://www.nature.com/articles/nature05357
 Freeth et al. (2008), Calendars with Olympiad display and eclipse prediction on the Antikythera Mechanism. Nature 454. https://pubmed.ncbi.nlm.nih.gov/18668103/
 Freeth et al. (2021), A Model of the Cosmos in the ancient Greek Antikythera Mechanism. Scientific Reports 11. https://www.nature.com/articles/s41598-021-84310-w
 Carman & Evans (2014), On the epoch of the Antikythera mechanism and its eclipse predictor. https://link.springer.com/article/10.1007/s00407-014-0145-5
+Woan & Bayley (2024), An improved calendar ring hole-count for the Antikythera mechanism. https://arxiv.org/abs/2403.00040
 Derek de Solla Price (1974), Gears from the Greeks.
 Woods Hole Oceanographic Institution, The Antikythera shipwreck. https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/antikythera-shipwreck/
 Linda Hall Library, Charles Boyle, 4th Earl of Orrery. https://www.lindahall.org/about/news/scientist-of-the-day/charles-boyle-4th-earl-of-orrery/
@@ -90,8 +91,8 @@ Question for you: if you could build a gear train that calculated just one thing
 - Altered or synthetic content: **No**. The narration is a synthetic voice that doesn't imitate a real person, over clearly animated visuals. YouTube's guidance says this doesn't need the label.
 - Category: Education. Language: English. Captions: upload `captions.en.srt` (Subtitles → Upload file → With timing).
 - Chapters: the timestamps in the description create them automatically.
-- **End screen**: from **12:04** to the end. Place two *Video* elements over the two outlined boxes on the right: "Best for viewer" and, once it exists, video #002. Place a *Subscribe* element under the Orrery wordmark on the left.
-- Cards: none yet. When #002 (longitude) is out, add a card at 11:07 ("A working model") pointing to it.
+- **End screen**: from **12:15** to the end. Place two *Video* elements over the two outlined boxes on the right: "Best for viewer" and, once it exists, video #002. Place a *Subscribe* element under the Orrery wordmark on the left.
+- Cards: none yet. When #002 (longitude) is out, add a card at 11:19 ("A working model") pointing to it.
 
 ## Before you publish
 
