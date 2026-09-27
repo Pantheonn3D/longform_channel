@@ -1,0 +1,48 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="../../engine/brand.css">
+<style>
+  body { width: 2560px; height: 1440px; overflow: hidden; position: relative;
+         background: radial-gradient(ellipse 1400px 700px at 50% 50%, #151c27 0%, var(--ink) 70%); }
+  svg.bg { position: absolute; inset: 0; }
+  .safe { position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px;
+          display: flex; align-items: center; gap: 64px; padding-left: 24px; box-sizing: border-box; }
+  .safe img { width: 300px; height: 300px; border-radius: 50%; flex: none; }
+  h1 { margin: 0; font-family: "Fraunces"; font-weight: 640; font-size: 208px; line-height: .9;
+       letter-spacing: -4px; font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0; }
+  p { margin: 26px 0 0; font-size: 50px; font-weight: 450; color: var(--mist); letter-spacing: .2px; }
+  p b { color: var(--brass); font-weight: 600; }
+  p.sub { margin-top: 10px; font-size: 40px; }
+  .guide { display: none; position: absolute; left: 507px; top: 508px; width: 1546px; height: 423px; outline: 3px dashed red; }
+  body.show-guide .guide { display: block; }
+</style>
+<body>
+<svg class="bg" id="bg" width="2560" height="1440"></svg>
+<div class="safe">
+  <div>
+    <h1>Orrery</h1>
+    <p><b>Working models of everything.</b></p>
+    <p class="sub">Animated documentaries on science, history and engineering.</p>
+  </div>
+</div>
+<div class="guide"></div>
+<script>
+  if (location.hash === "#guide") document.body.classList.add("show-guide");
+  // Faint orrery drawn around the safe area: only visible on desktop / TV crops.
+  const s = document.getElementById("bg"), NS = "http://www.w3.org/2000/svg";
+  const add = (tag, a) => { const e = document.createElementNS(NS, tag); for (const k in a) e.setAttribute(k, a[k]); s.appendChild(e); return e; };
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  for (let i = 0; i < 260; i++) add("circle", { cx: rnd() * 2560, cy: rnd() * 1440, r: rnd() < .9 ? 1.4 : 2.4, fill: "#eee9df", opacity: (.08 + rnd() * .3).toFixed(2) });
+  const cx = 1860, cy = 720;
+  [[170, "#3a4454"], [320, "#2c3441"], [560, "#1d232d"], [860, "#1a2029"]].forEach(([r, c], i) => {
+    add("circle", { cx, cy, r, fill: "none", stroke: c, "stroke-width": 3 });
+    const a = [-0.9, 0.75, -1.2, 2.3][i];
+    add("circle", { cx: cx + r * Math.cos(a), cy: cy + r * Math.sin(a), r: [16, 22, 12, 24][i], fill: ["#4fb3a2", "#9aa4b2", "#e0a943", "#3a4454"][i] });
+  });
+  // the sun is a gear, as in the logo
+  const n = 20, step = 2 * Math.PI / n, pts = [];
+  for (let i = 0; i < n; i++) for (const [f, r] of [[0, 56], [.2, 56], [.36, 68], [.64, 68], [.8, 56]]) {
+    const a = step * (i + f) - Math.PI / 2; pts.push((cx + r * Math.cos(a)).toFixed(1) + "," + (cy + r * Math.sin(a)).toFixed(1));
+  }
+  add("polygon", { points: pts.join(" "), fill: "#e0a943" });
+  [[380, "#2c3441"], [620, "#1f2630"]].forEach(([r, c]) => add("circle", { cx: 300, cy: 1180, r, fill: "none", stroke: c, "stroke-width": 3 }));
+</script>
+</body>

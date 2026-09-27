@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="brand.css">
+<style>html, body { margin: 0; overflow: hidden; background: #000; } canvas { display: block; }</style>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="lib.js"></script>
+<script>
+// The player turns timeline.json (from tts.py) into shots and draws any frame on demand.
+// render.py sets window.TIMELINE / window.ASSETS, loads the video's scenes.js, then calls frame(t) per frame.
+const ctx = document.getElementById("c").getContext("2d");
+const XFADE = .7;
+let SHOTS = [], CHAPTERS = [];
+
+function setup() {
+  const beats = TIMELINE.beats;
+  const byShot = new Map();
+  beats.forEach(b => { if (!byShot.has(b.shot)) byShot.set(b.shot, []); byShot.get(b.shot).push(b); });
+  const ids = [...byShot.keys()].sort((a, b) => a - b);
+  SHOTS = ids.map((id, i) => {
+    const bs = byShot.get(id);
+    const prevEnd = i ? byShot.get(ids[i - 1]).at(-1).end : 0;
+    // cut in the middle of the silence before the shot's first line
+    const start = i ? (prevEnd + bs[0].start) / 2 : 0;
+    return { id, scene: bs[0].scene, p: bs[0].params, start, beats: bs, chapter: bs[0].chapter };
+  });
+  SHOTS.forEach((s, i) => {
+    s.end = i + 1 < SHOTS.length ? SHOTS[i + 1].start : TIMELINE.duration;
+    s.beats = s.beats.map(b => ({ ...b, start: b.start - s.start, end: b.end - s.start }));
+  });
+  CHAPTERS = [];
+  SHOTS.forEach(s => { if (!CHAPTERS.length || CHAPTERS.at(-1).name !== s.chapter) CHAPTERS.push({ name: s.chapter, start: s.beats[0].start + s.start }); });
+  return { shots: SHOTS.length, duration: TIMELINE.duration };
+}
+
+// Time (shot-relative) at which a word in a beat is spoken; estimated from character position.
+function wordTime(shot, bi, word) {
+  const b = shot.beats[bi];
+  if (!b || !b.words) return b ? b.start : 0;
+  const i = b.words.findIndex(([w]) => w.toLowerCase().replace(/[^a-z0-9]/g, "").startsWith(word.toLowerCase()));
+  return b.start + (i >= 0 ? b.words[i][1] : 0);
+}
+
+function drawShot(shot, T, g) {
+  const s = {
+    t: T - shot.start, dur: shot.end - shot.start, p: shot.p, beats: shot.beats, T,
+    b: i => (shot.beats[i] || shot.beats.at(-1)).start,
+    be: i => (shot.beats[i] || shot.beats.at(-1)).end,
+    w: (i, word) => wordTime(shot, i, word),
+  };
+  g.save();
+  (SCENES[shot.scene] || SCENES.missing)(g, s);
+  g.restore();
+}
+
+const off = document.createElement("canvas"); off.width = W; off.height = H;
+const offCtx = off.getContext("2d");
+
+function frame(T) {
+  const i = SHOTS.findIndex(s => T >= s.start && T < s.end);
+  const k = i < 0 ? SHOTS.length - 1 : i;
+  const cur = SHOTS[k];
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = C.ink; ctx.fillRect(0, 0, W, H);
+  drawShot(cur, T, ctx);
+  // crossfade into the next shot during the last part of this one
+  const nxt = SHOTS[k + 1];
+  if (nxt && T > nxt.start - XFADE) {
+    offCtx.globalAlpha = 1; offCtx.fillStyle = C.ink; offCtx.fillRect(0, 0, W, H);
+    drawShot(nxt, T, offCtx);
+    ctx.globalAlpha = ease(clamp((T - (nxt.start - XFADE)) / XFADE));
+    ctx.drawImage(off, 0, 0);
+    ctx.globalAlpha = 1;
+  }
+  // chapter name, lower left, for the first seconds of each chapter (not the cold open or the end)
+  CHAPTERS.forEach((c, ci) => {
+    if (ci === 0 || !c.name) return;
+    const a = vis(T, c.start - .2, c.start + 4.2, .6);
+    if (a > 0) {
+      ctx.save(); ctx.globalAlpha = a;
+      ctx.fillStyle = C.brass; ctx.fillRect(96, 96, 44, 3);
+      text(ctx, c.name, 96, 146, { size: 40, kind: "serif", weight: 560, color: C.bone });
+      ctx.restore();
+    }
+  });
+  finish(ctx);
+}
+
+function loadScenes(src) {
+  return new Promise((ok, bad) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = bad; document.body.appendChild(s); });
+}
+</script>

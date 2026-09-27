@@ -1,0 +1,20 @@
+{
+  "text": {
+    "\\b1900\\b": "nineteen hundred",
+    "\\b1902\\b": "nineteen oh two",
+    "\\b1971\\b": "nineteen seventy-one",
+    "\\b2005\\b": "two thousand and five",
+    "\\b2021\\b": "twenty twenty-one",
+    "\\b1700s\\b": "seventeen-hundreds",
+    "\\b205 BC\\b": "two hundred and five B.C.",
+    "\\bBC\\b": "B.C."
+  },
+  "ipa": {
+    "Antikythera": "ˌæntɪkɪθˈɪɹə",
+    "Hipparchus": "hɪpˈɑːɹkəs",
+    "Stais": "stˈɑːɪs",
+    "Charalambos": "hɑːɹˈɑːlɑːmbˌoʊs",
+    "Karakalos": "kˌɑːɹɑːkˈɑːloʊs",
+    "Saros": "sˈɛɹɑːs"
+  }
+}

@@ -1,0 +1,3 @@
+engine/models/
+videos/*/build/
+__pycache__/

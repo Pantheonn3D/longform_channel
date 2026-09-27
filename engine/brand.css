@@ -1,0 +1,19 @@
+/* Orrery brand tokens + fonts. Used by brand assets, thumbnails and video scenes. */
+@font-face { font-family: "Fraunces"; src: url("fonts/Fraunces.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+
+:root {
+  --ink: #0d1117;        /* background: blue-black, like a night sky */
+  --ink-2: #161c25;      /* raised panels */
+  --ink-3: #232b37;      /* hairlines, grid */
+  --brass: #e0a943;      /* primary accent: the sun, highlights */
+  --brass-dim: #9c7631;
+  --verdigris: #4fb3a2;  /* secondary accent: corroded bronze, data lines */
+  --signal: #ef5b3f;     /* rare emphasis: arrows, "wrong" marks in thumbnails */
+  --bone: #eee9df;       /* primary text on dark */
+  --mist: #9aa4b2;       /* secondary text */
+}
+
+html, body { margin: 0; padding: 0; background: var(--ink); color: var(--bone); }
+body { font-family: "Inter", sans-serif; -webkit-font-smoothing: antialiased; }
+.serif { font-family: "Fraunces", serif; font-variation-settings: "SOFT" 0, "WONK" 0; }

@@ -1,0 +1,803 @@
+1
+00:00:00,800 --> 00:00:06,037
+In the spring of 1900, a boat full of sponge divers was running for cover.
+
+2
+00:00:06,087 --> 00:00:11,517
+A storm had pushed them off course, and they sheltered behind a small rocky island
+
+3
+00:00:11,567 --> 00:00:14,095
+between Crete and mainland Greece.
+
+4
+00:00:14,145 --> 00:00:16,094
+Its name was Antikythera.
+
+5
+00:00:16,894 --> 00:00:19,360
+While they waited for the weather to turn,
+
+6
+00:00:19,410 --> 00:00:22,379
+one of the divers went down to look for sponges.
+
+7
+00:00:22,429 --> 00:00:26,739
+He came back up badly shaken, saying the seabed was covered in bodies.
+
+8
+00:00:27,539 --> 00:00:28,956
+They weren't bodies.
+
+9
+00:00:29,006 --> 00:00:33,640
+They were bronze and marble statues, lying on the wreck of a cargo ship that had
+
+10
+00:00:33,690 --> 00:00:36,405
+gone down about two thousand years earlier.
+
+11
+00:00:37,205 --> 00:00:40,229
+Over the next year, divers hauled up statues,
+
+12
+00:00:40,279 --> 00:00:42,504
+pottery, glassware and coins.
+
+13
+00:00:42,554 --> 00:00:45,701
+And among all of it, a lump of corroded bronze,
+
+14
+00:00:45,751 --> 00:00:50,251
+roughly the size of a shoebox, that nobody paid much attention to.
+
+15
+00:00:51,051 --> 00:00:52,945
+Inside that lump were gears.
+
+16
+00:00:52,995 --> 00:00:57,062
+Dozens of them, some with teeth barely more than a millimetre long,
+
+17
+00:00:57,112 --> 00:00:59,978
+cut by hand more than two thousand years ago.
+
+18
+00:01:00,778 --> 00:01:03,405
+It is a machine for calculating the sky.
+
+19
+00:01:03,455 --> 00:01:08,060
+Turn a handle, and it shows you where the Sun and Moon will be on any day you
+
+20
+00:01:08,110 --> 00:01:10,620
+choose, what phase the Moon will be in,
+
+21
+00:01:10,670 --> 00:01:13,239
+and which months will bring an eclipse.
+
+22
+00:01:13,739 --> 00:01:18,328
+Nothing with this kind of gearing survives from anywhere in the world for more than
+
+23
+00:01:18,378 --> 00:01:20,205
+a thousand years afterwards.
+
+24
+00:01:20,255 --> 00:01:22,966
+This is how it worked, one gear at a time.
+
+25
+00:01:28,566 --> 00:01:32,644
+The finds went to the National Archaeological Museum in Athens,
+
+26
+00:01:32,694 --> 00:01:35,271
+where the statues got the attention.
+
+27
+00:01:35,321 --> 00:01:38,961
+The bronze lump dried out on its own, and as it dried,
+
+28
+00:01:39,011 --> 00:01:40,400
+it cracked apart.
+
+29
+00:01:41,200 --> 00:01:46,927
+On the seventeenth of May, 1902, the archaeologist Valerios Stais looked closely at
+
+30
+00:01:46,977 --> 00:01:50,669
+one of the pieces and saw a gear wheel embedded in it,
+
+31
+00:01:50,719 --> 00:01:53,032
+along with tiny Greek letters.
+
+32
+00:01:53,832 --> 00:01:57,262
+Today the mechanism exists as eighty two fragments.
+
+33
+00:01:57,312 --> 00:02:00,437
+Perhaps a third of the original machine survives,
+
+34
+00:02:00,487 --> 00:02:05,505
+including thirty bronze gears, and the largest fragment holds most of them.
+
+35
+00:02:06,305 --> 00:02:11,138
+The problem was that almost everything important was locked inside the corrosion.
+
+36
+00:02:11,188 --> 00:02:13,495
+You could see the edge of a wheel here,
+
+37
+00:02:13,545 --> 00:02:16,862
+a few letters there, but not how anything connected.
+
+38
+00:02:18,212 --> 00:02:23,313
+The first person to make real progress was a British physicist and historian of
+
+39
+00:02:23,363 --> 00:02:25,760
+science, Derek de Solla Price.
+
+40
+00:02:25,810 --> 00:02:30,331
+In 1971 he worked with the Greek radiographer Charalambos Karakalos,
+
+41
+00:02:30,381 --> 00:02:35,804
+who X-rayed the fragments, and together they began counting the teeth on the gears
+
+42
+00:02:35,854 --> 00:02:37,156
+they could see.
+
+43
+00:02:37,956 --> 00:02:40,490
+Counting teeth sounds like a small thing,
+
+44
+00:02:40,540 --> 00:02:44,366
+but in a geared machine, the tooth counts are the program.
+
+45
+00:02:44,416 --> 00:02:47,655
+They tell you exactly what ratio each wheel turns at,
+
+46
+00:02:47,705 --> 00:02:50,768
+and so what the machine was built to calculate.
+
+47
+00:02:51,568 --> 00:02:54,686
+One gear had about a hundred and twenty seven teeth,
+
+48
+00:02:54,736 --> 00:02:56,933
+which is an odd number to choose.
+
+49
+00:02:56,983 --> 00:03:01,887
+Price realised that twice a hundred and twenty seven is two hundred and fifty four,
+
+50
+00:03:01,937 --> 00:03:06,149
+and two hundred and fifty four is a number astronomers already knew.
+
+51
+00:03:06,199 --> 00:03:07,992
+We'll see why in a moment.
+
+52
+00:03:08,792 --> 00:03:11,044
+The breakthrough came in 2005.
+
+53
+00:03:11,094 --> 00:03:16,417
+A team shipped a specialised X-ray scanner from England to the museum in Athens and
+
+54
+00:03:16,467 --> 00:03:19,550
+scanned every fragment in three dimensions.
+
+55
+00:03:19,600 --> 00:03:25,178
+For the first time, researchers could look through the corrosion layer by layer.
+
+56
+00:03:25,978 --> 00:03:29,927
+The scans revealed gears hidden deep inside the largest fragment,
+
+57
+00:03:29,977 --> 00:03:35,161
+and thousands of characters of text that had been invisible for two thousand years.
+
+58
+00:03:35,211 --> 00:03:39,219
+Much of that text turned out to be something like a user's manual,
+
+59
+00:03:39,269 --> 00:03:41,807
+describing what the machine displayed.
+
+60
+00:03:43,157 --> 00:03:45,835
+To understand what the mechanism calculates,
+
+61
+00:03:45,885 --> 00:03:48,272
+you need the problem it was solving.
+
+62
+00:03:48,322 --> 00:03:52,277
+Seen from Earth, the Sun drifts around a band of constellations,
+
+63
+00:03:52,327 --> 00:03:54,134
+the zodiac, once a year.
+
+64
+00:03:54,934 --> 00:03:57,599
+The Moon travels the same band much faster,
+
+65
+00:03:57,649 --> 00:04:01,495
+going all the way around in a little over twenty seven days.
+
+66
+00:04:02,295 --> 00:04:06,021
+But the cycle people actually lived by was the Moon's phases,
+
+67
+00:04:06,071 --> 00:04:07,614
+new moon to new moon.
+
+68
+00:04:07,664 --> 00:04:10,623
+That takes about twenty nine and a half days.
+
+69
+00:04:10,673 --> 00:04:13,751
+Ancient Greek calendars ran on these lunar months,
+
+70
+00:04:13,801 --> 00:04:15,934
+and festivals were set by them.
+
+71
+00:04:16,734 --> 00:04:18,117
+Here's the trouble.
+
+72
+00:04:18,167 --> 00:04:21,386
+A year doesn't hold a whole number of lunar months.
+
+73
+00:04:21,436 --> 00:04:23,679
+It holds about twelve and a third.
+
+74
+00:04:23,729 --> 00:04:28,381
+So a calendar of twelve lunar months drifts away from the seasons by about eleven
+
+75
+00:04:28,431 --> 00:04:29,642
+days every year.
+
+76
+00:04:30,442 --> 00:04:35,099
+Astronomers found a way out, known to the Greeks as the Metonic cycle.
+
+77
+00:04:35,149 --> 00:04:40,228
+Nineteen years contain almost exactly two hundred and thirty five lunar months.
+
+78
+00:04:40,278 --> 00:04:43,607
+The mismatch is about two hours in nineteen years.
+
+79
+00:04:43,657 --> 00:04:47,891
+So if you add seven extra months spread across those nineteen years,
+
+80
+00:04:47,941 --> 00:04:50,908
+the calendar stays in step with the seasons.
+
+81
+00:04:51,708 --> 00:04:54,867
+And now two hundred and fifty four makes sense.
+
+82
+00:04:54,917 --> 00:05:00,134
+In those same nineteen years, the Moon goes around the zodiac two hundred and thirty
+
+83
+00:05:00,184 --> 00:05:04,190
+five times plus nineteen, once for every lap the Sun makes.
+
+84
+00:05:04,240 --> 00:05:06,188
+Two hundred and fifty four.
+
+85
+00:05:07,538 --> 00:05:10,029
+A pair of meshing gears multiplies.
+
+86
+00:05:10,079 --> 00:05:14,059
+If a gear with sixty four teeth drives a gear with thirty two,
+
+87
+00:05:14,109 --> 00:05:17,902
+the small one turns twice for every turn of the big one.
+
+88
+00:05:17,952 --> 00:05:21,125
+The ratio is just the tooth counts, divided.
+
+89
+00:05:21,925 --> 00:05:25,632
+Chain several pairs together, and the ratios multiply.
+
+90
+00:05:25,682 --> 00:05:29,147
+In the mechanism, the main wheel turns once per year,
+
+91
+00:05:29,197 --> 00:05:30,784
+driven by the handle.
+
+92
+00:05:30,834 --> 00:05:34,480
+From it, a train of gears runs to the Moon's pointer.
+
+93
+00:05:35,280 --> 00:05:37,307
+Sixty four over thirty eight.
+
+94
+00:05:37,357 --> 00:05:39,384
+Forty eight over twenty four.
+
+95
+00:05:39,434 --> 00:05:42,291
+A hundred and twenty seven over thirty two.
+
+96
+00:05:42,341 --> 00:05:47,513
+Multiply them out, and you get exactly two hundred and fifty four over nineteen.
+
+97
+00:05:48,313 --> 00:05:53,171
+One turn of the year wheel moves the Moon pointer through two hundred and fifty four
+
+98
+00:05:53,221 --> 00:05:54,788
+nineteenths of a turn.
+
+99
+00:05:54,838 --> 00:05:57,445
+The Moon laps the zodiac at the right rate,
+
+100
+00:05:57,495 --> 00:06:01,718
+forever, with no arithmetic done by the person turning the handle.
+
+101
+00:06:01,768 --> 00:06:03,912
+The arithmetic is in the bronze.
+
+102
+00:06:05,262 --> 00:06:07,746
+The Moon has one more complication.
+
+103
+00:06:07,796 --> 00:06:10,590
+Its speed across the sky isn't constant.
+
+104
+00:06:10,640 --> 00:06:13,248
+Over about twenty seven and a half days,
+
+105
+00:06:13,298 --> 00:06:17,080
+it speeds up, then slows down, then speeds up again.
+
+106
+00:06:17,880 --> 00:06:19,167
+We now know why.
+
+107
+00:06:19,217 --> 00:06:24,393
+The Moon's orbit is an ellipse, and it moves faster when it's closer to Earth.
+
+108
+00:06:24,443 --> 00:06:27,005
+The Greeks didn't have that explanation,
+
+109
+00:06:27,055 --> 00:06:30,712
+but the astronomer Hipparchus, in the second century BC,
+
+110
+00:06:30,762 --> 00:06:34,176
+built a geometric model that reproduced the effect.
+
+111
+00:06:34,976 --> 00:06:37,919
+The mechanism builds that model in metal.
+
+112
+00:06:37,969 --> 00:06:42,823
+Two gears of fifty teeth each sit on axes offset by about a millimetre.
+
+113
+00:06:42,873 --> 00:06:46,198
+A pin on one gear rides in a slot on the other.
+
+114
+00:06:46,248 --> 00:06:50,019
+As they turn, the pin slides in and out along the slot,
+
+115
+00:06:50,069 --> 00:06:52,757
+and the second gear runs slightly ahead,
+
+116
+00:06:52,807 --> 00:06:54,476
+then slightly behind.
+
+117
+00:06:55,276 --> 00:06:58,696
+The result is a Moon pointer that speeds up and slows down,
+
+118
+00:06:58,746 --> 00:07:00,543
+the way the real Moon does.
+
+119
+00:07:01,343 --> 00:07:06,686
+And the high and low points of the Moon's speed don't stay in one place in the sky.
+
+120
+00:07:06,736 --> 00:07:10,504
+They creep around the zodiac about once every nine years.
+
+121
+00:07:10,554 --> 00:07:15,534
+So the whole pin and slot assembly is mounted on a larger gear that slowly carries
+
+122
+00:07:15,584 --> 00:07:18,200
+it around, once in about nine years.
+
+123
+00:07:18,250 --> 00:07:22,018
+It is a moving mechanism riding on another moving mechanism,
+
+124
+00:07:22,068 --> 00:07:24,684
+made more than two thousand years ago.
+
+125
+00:07:26,034 --> 00:07:29,773
+Turn the box around, and the back has two large dials,
+
+126
+00:07:29,823 --> 00:07:31,828
+each laid out as a spiral.
+
+127
+00:07:31,878 --> 00:07:34,011
+The upper one is a calendar.
+
+128
+00:07:34,061 --> 00:07:39,406
+Its pointer travels five turns of a spiral divided into two hundred and thirty five
+
+129
+00:07:39,456 --> 00:07:41,974
+cells, one cell per lunar month.
+
+130
+00:07:42,024 --> 00:07:43,901
+The Metonic cycle again.
+
+131
+00:07:44,701 --> 00:07:47,984
+A pin at the pointer's tip rides in the spiral's groove,
+
+132
+00:07:48,034 --> 00:07:51,318
+so the pointer lengthens as it works its way outward.
+
+133
+00:07:51,368 --> 00:07:54,878
+When it reaches the end, you lift it back to the start.
+
+134
+00:07:55,678 --> 00:07:58,462
+The inscribed month names are Corinthian,
+
+135
+00:07:58,512 --> 00:08:02,843
+which hints at where the machine was made or meant to be used.
+
+136
+00:08:02,893 --> 00:08:07,931
+A smaller dial inside the spiral tracks a four year cycle of athletic games,
+
+137
+00:08:07,981 --> 00:08:09,799
+including the Olympics.
+
+138
+00:08:10,599 --> 00:08:13,455
+The lower spiral is the most remarkable.
+
+139
+00:08:13,505 --> 00:08:17,435
+It has four turns and two hundred and twenty three cells.
+
+140
+00:08:17,485 --> 00:08:20,278
+Two hundred and twenty three lunar months,
+
+141
+00:08:20,328 --> 00:08:23,184
+about eighteen years, is the Saros cycle,
+
+142
+00:08:23,234 --> 00:08:26,153
+which Babylonian astronomers had discovered:
+
+143
+00:08:26,203 --> 00:08:29,249
+after one Saros, eclipses tend to repeat.
+
+144
+00:08:30,049 --> 00:08:35,042
+Some cells carry small inscriptions, glyphs marking an expected eclipse of the Sun
+
+145
+00:08:35,092 --> 00:08:38,008
+or the Moon, and even the hour of the day.
+
+146
+00:08:38,058 --> 00:08:42,992
+Point to this month, and the machine tells you whether to expect an eclipse.
+
+147
+00:08:44,342 --> 00:08:48,383
+The front of the mechanism had one large dial with two rings.
+
+148
+00:08:48,433 --> 00:08:50,520
+The inner ring is the zodiac.
+
+149
+00:08:50,570 --> 00:08:55,587
+The outer ring is the Egyptian calendar of three hundred and sixty five days.
+
+150
+00:08:55,637 --> 00:09:00,899
+That calendar ignored leap days, so its ring could be turned by hand to stay aligned
+
+151
+00:09:00,949 --> 00:09:02,059
+with the Sun.
+
+152
+00:09:02,859 --> 00:09:07,418
+Pointers showed the positions of the Sun and the Moon against the zodiac.
+
+153
+00:09:07,468 --> 00:09:10,160
+And a small ball, half pale and half dark,
+
+154
+00:09:10,210 --> 00:09:12,377
+turned to show the Moon's phase.
+
+155
+00:09:12,427 --> 00:09:17,045
+Its rotation came from a gear arrangement that takes the difference between the
+
+156
+00:09:17,095 --> 00:09:19,028
+Moon's motion and the Sun's.
+
+157
+00:09:19,828 --> 00:09:24,048
+The inscriptions also name the five planets known in antiquity:
+
+158
+00:09:24,098 --> 00:09:27,478
+Mercury, Venus, Mars, Jupiter and Saturn.
+
+159
+00:09:27,528 --> 00:09:32,719
+None of the planetary gears survive, so what came next is reconstruction.
+
+160
+00:09:33,519 --> 00:09:38,622
+In 2021, a team at University College London published a proposed design for the
+
+161
+00:09:38,672 --> 00:09:40,670
+whole front of the machine.
+
+162
+00:09:40,720 --> 00:09:44,768
+Their starting point was two numbers found in the inscriptions:
+
+163
+00:09:44,818 --> 00:09:48,182
+four hundred and sixty two, associated with Venus,
+
+164
+00:09:48,232 --> 00:09:51,410
+and four hundred and forty two, with Saturn.
+
+165
+00:09:51,460 --> 00:09:54,949
+Both are long, accurate cycles for those planets.
+
+166
+00:09:55,749 --> 00:10:00,537
+From those cycles they designed gear trains that fit in the space available,
+
+167
+00:10:00,587 --> 00:10:03,415
+using methods the Greeks could have used.
+
+168
+00:10:03,465 --> 00:10:07,701
+It shows how the whole known cosmos might have fitted into one box,
+
+169
+00:10:07,751 --> 00:10:11,681
+although the planetary display itself remains a hypothesis.
+
+170
+00:10:13,031 --> 00:10:14,996
+We don't know who made it.
+
+171
+00:10:15,046 --> 00:10:20,160
+The Roman orator Cicero describes a bronze sphere built by Archimedes that showed
+
+172
+00:10:20,210 --> 00:10:23,057
+the motions of the Sun, Moon and planets,
+
+173
+00:10:23,107 --> 00:10:28,347
+and he mentions a similar device made by the philosopher Posidonius on Rhodes.
+
+174
+00:10:28,397 --> 00:10:30,048
+Neither has survived.
+
+175
+00:10:30,098 --> 00:10:34,582
+The Antikythera mechanism is the only machine of its kind we have.
+
+176
+00:10:35,382 --> 00:10:37,853
+The ship sank around sixty BC.
+
+177
+00:10:37,903 --> 00:10:42,684
+Studies of the eclipse dial suggest its cycle starts in 205 BC.
+
+178
+00:10:42,734 --> 00:10:48,355
+That's when the calendar begins, which is not necessarily when the machine was
+
+179
+00:10:48,405 --> 00:10:52,696
+built, but it places the design in the second century BC,
+
+180
+00:10:52,746 --> 00:10:55,217
+around the time of Hipparchus.
+
+181
+00:10:56,017 --> 00:10:58,044
+And then the trail goes cold.
+
+182
+00:10:58,094 --> 00:11:02,910
+Gearing of this complexity doesn't appear again in the surviving record until the
+
+183
+00:11:02,960 --> 00:11:05,403
+astronomical clocks of medieval Europe,
+
+184
+00:11:05,453 --> 00:11:07,302
+in the fourteenth century.
+
+185
+00:11:08,652 --> 00:11:12,785
+It's tempting to call it a computer, and in one sense it is.
+
+186
+00:11:12,835 --> 00:11:16,168
+It takes an input, a date, and computes outputs,
+
+187
+00:11:16,218 --> 00:11:18,690
+the positions and phases and eclipses,
+
+188
+00:11:18,740 --> 00:11:21,150
+using nothing but ratios of teeth.
+
+189
+00:11:21,650 --> 00:11:23,865
+But it's also something simpler.
+
+190
+00:11:23,915 --> 00:11:24,997
+It's a model.
+
+191
+00:11:25,047 --> 00:11:28,931
+Somebody took everything their civilisation knew about the sky,
+
+192
+00:11:28,981 --> 00:11:33,520
+the cycles found by Babylonian astronomers and the geometry of Greek ones,
+
+193
+00:11:33,570 --> 00:11:35,963
+and made it into a thing you can hold,
+
+194
+00:11:36,013 --> 00:11:37,632
+and turn, and watch.
+
+195
+00:11:38,132 --> 00:11:43,214
+In the early 1700s, English instrument makers built a clockwork model of the solar
+
+196
+00:11:43,264 --> 00:11:46,051
+system, and a copy made for Charles Boyle,
+
+197
+00:11:46,101 --> 00:11:49,794
+the Earl of Orrery, gave every machine like it a name.
+
+198
+00:11:49,844 --> 00:11:52,692
+Orreries: working models of the heavens.
+
+199
+00:11:52,742 --> 00:11:56,073
+The one from Antikythera is the oldest we know of.
+
+200
+00:11:56,123 --> 00:12:00,601
+That idea, building a model so you can see how a thing actually works,
+
+201
+00:12:00,651 --> 00:12:02,775
+is what this channel is about.

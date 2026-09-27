@@ -1,0 +1,86 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../engine/brand.css">
+<style>html, body { margin: 0; overflow: hidden; } canvas { display: block; }</style>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="../../../engine/lib.js"></script>
+<script>window.ASSETS = {};</script>
+<script src="../scenes.js"></script>
+<script>
+// Thumbnails for #001. Drawn at 1920×1080 and downscaled to 1280×720 by make.py.
+// Variant from the URL hash: #a (fragment + "2,000 years old"), #b (gear eclipse), #c (no text, arrow).
+const g = document.getElementById("c").getContext("2d");
+const v = location.hash.slice(1) || "a";
+const fontsReady = Promise.all(["800 100px Fraunces", "800 100px Inter", "600 60px Inter"].map(f => document.fonts.load(f)));
+
+function glowBg(x, y, r, col) {
+  bg(g, "#16202c", "#080b10");
+  const gr = g.createRadialGradient(x, y, 0, x, y, r);
+  gr.addColorStop(0, col); gr.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, W, H);
+}
+
+// fragment cut open: corroded crust on the left, glowing gearwork visible through the break on the right
+function openFragment(x, y, r) {
+  lump(g, x, y, r, 3, .9, 1);
+  g.save();
+  lumpPath(g, x, y, r, 3); g.clip();
+  g.fillStyle = "rgba(8,10,14,.82)";
+  g.beginPath(); g.moveTo(x + 40, y - r * 1.2); g.lineTo(x + r * 1.3, y - r * 1.2); g.lineTo(x + r * 1.3, y + r * 1.2); g.lineTo(x - 120, y + r * 1.2); g.closePath(); g.fill();
+  g.save(); g.beginPath(); g.moveTo(x + 40, y - r * 1.2); g.lineTo(x + r * 1.3, y - r * 1.2); g.lineTo(x + r * 1.3, y + r * 1.2); g.lineTo(x - 120, y + r * 1.2); g.closePath(); g.clip();
+  const glow = "rgba(224,169,67,.9)";
+  gear(g, { x: x + 170, y: y - 40, teeth: 64, r: 250, rot: .1, stroke: C.brass, lw: 7, fill: "rgba(224,169,67,.10)", glow, hole: "rgba(0,0,0,0)" });
+  gear(g, { x: x + 20, y: y + 250, teeth: 38, r: 150, rot: .2, stroke: C.brass, lw: 6, glow, hole: "rgba(0,0,0,0)" });
+  gear(g, { x: x + 420, y: y + 230, teeth: 24, r: 95, rot: .3, stroke: C.verd, lw: 6, glow: "rgba(79,179,162,.9)", hole: "rgba(0,0,0,0)" });
+  g.restore();
+  g.restore();
+  // bright edge along the break
+  g.save(); lumpPath(g, x, y, r, 3); g.clip(); g.strokeStyle = "rgba(255,210,140,.8)"; g.lineWidth = 5; g.shadowColor = C.brass; g.shadowBlur = 30;
+  g.beginPath(); g.moveTo(x + 40, y - r * .95); g.lineTo(x - 50, y + r * .9); g.stroke(); g.restore();
+}
+
+function big(str, x, y, size, color, o = {}) {
+  g.save();
+  g.shadowColor = "rgba(0,0,0,.7)"; g.shadowBlur = 24; g.shadowOffsetY = 6;
+  text(g, str, x, y, { size, kind: o.kind ?? "serif", weight: o.weight ?? 800, color, align: o.align ?? "left", tracking: o.tracking ?? 0 });
+  g.restore();
+}
+
+function draw() {
+if (v === "a") {
+  glowBg(620, 560, 700, "rgba(224,169,67,.22)");
+  openFragment(600, 560, 500);
+  big("2,000", 1110, 520, 240, C.brass);
+  big("YEARS OLD", 1118, 660, 100, C.bone, { kind: "sans", weight: 800, tracking: 2 });
+}
+
+if (v === "b") {
+  glowBg(1290, 540, 760, "rgba(224,169,67,.28)");
+  // eclipse whose corona is a ring of gear teeth
+  const x = 1480, y = 540;
+  g.save(); g.shadowColor = C.brass; g.shadowBlur = 90;
+  gearPath(g, x, y, 60, 330, 0, { toothH: 60 });
+  g.fillStyle = C.brass; g.fill(); g.restore();
+  gearPath(g, x, y, 60, 330, 0, { toothH: 60 });
+  g.fillStyle = "#f3c872"; g.fill();
+  g.fillStyle = "#07090c"; g.beginPath(); g.arc(x, y, 292, 0, TAU); g.fill();
+  g.strokeStyle = "rgba(255,230,180,.5)"; g.lineWidth = 3; g.beginPath(); g.arc(x, y, 292, 0, TAU); g.stroke();
+  big("ECLIPSE", 100, 470, 160, C.bone, { kind: "sans", weight: 800 });
+  big("CALCULATOR", 100, 610, 118, C.brass, { kind: "sans", weight: 800 });
+  big("built 2,000 years ago", 106, 710, 56, C.mist, { kind: "sans", weight: 600 });
+}
+
+if (v === "c") {
+  glowBg(900, 560, 800, "rgba(224,169,67,.25)");
+  openFragment(900, 560, 470);
+  // red arrow at the exposed gear
+  g.save(); g.strokeStyle = C.signal; g.fillStyle = C.signal; g.lineWidth = 22; g.lineCap = "round";
+  g.shadowColor = "rgba(0,0,0,.6)"; g.shadowBlur = 20;
+  g.beginPath(); g.moveTo(1640, 170); g.quadraticCurveTo(1560, 380, 1330, 430); g.stroke();
+  arrowHead(g, 1300, 436, Math.PI * .97, 70);
+  g.restore();
+}
+window.done = true;
+}
+fontsReady.then(draw);
+</script>
