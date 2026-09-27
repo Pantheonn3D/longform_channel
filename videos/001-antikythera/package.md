@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Video file | `out/001-antikythera.mp4` (1920×1080, 30 fps, 12:28, loudness-normalised to −14 LUFS) |
+| Video file | `out/001-antikythera.mp4` (1920×1080, 30 fps, 12:28, −14.7 LUFS). This is a 2-pass 0.86 Mbps copy (93 MB) so it fits GitHub's 100 MB limit. The full-quality master (~150 MB, CRF 19) is a bit crisper in the rain and underwater shots; `python engine/render.py videos/001-antikythera` recreates it. |
 | Thumbnails | `thumbnail/thumb-a.jpg`, `thumb-b.jpg`, `thumb-c.jpg` (1280×720) |
 | Captions | `captions.en.srt` |
 | Narration | Scratch voice (Kokoro "af_heart"). Swap in ElevenLabs before publishing if you can; see `README.md`. |
