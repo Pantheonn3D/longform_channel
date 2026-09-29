@@ -23,7 +23,7 @@ SCENES.v_compass = (g, s) => {
   push(g, s);
   // compass rose: north–south solid and certain, east–west shaky
   g.strokeStyle = C.line; g.lineWidth = 3; g.beginPath(); g.arc(CX, CY, 330, 0, TAU); g.stroke();
-  const nk = prog(t, s.w(0, "north") - .3, .4, easeOut), ek = prog(t, s.w(1, "east") - .3, .4, easeOut);
+  const nk = prog(t, s.w(0, "north") - .3, .4, easeOut), ek = prog(t, s.w(0, "east") - .3, .4, easeOut);
   g.save(); g.globalAlpha = nk; g.fillStyle = C.brass;
   g.beginPath(); g.moveTo(CX, CY - 320); g.lineTo(CX + 40, CY); g.lineTo(CX, CY + 320); g.lineTo(CX - 40, CY); g.fill(); g.restore();
   text(g, "N", CX, CY - 350, { size: 60, kind: "serif", weight: 640, align: "center", color: C.brass, alpha: nk });
@@ -70,12 +70,12 @@ SCENES.v_globe = (g, s) => {
   push(g, s, .05);
   const R = 400;
   if (!noon) {
-    const h = Math.min(6, Math.floor(prog(t, s.w(1, "15") - .6, 2.4, x => x) * 6));
+    const h = Math.min(6, Math.floor(prog(t, s.w(0, "15") - .6, 2.4, x => x) * 6));
     const mer = [];
     for (let i = 0; i <= h; i++) mer.push([-i * 15, i === h ? C.brass : "rgba(224,169,67,.35)", i === h ? 5 : 2]);
     globe(g, CX, CY, R, -h * 15 + 30 - T * 2, 20, { meridians: mer });
     headline(g, "time", 250, prog(t, s.w(0, "time") - .2, .3, easeOut), C.bone);
-    text(g, "15° every hour", CX, 1150, { size: 66, weight: 800, align: "center", color: C.brass, alpha: prog(t, s.w(1, "15") - .2, .3) });
+    text(g, "15° every hour", CX, 1150, { size: 66, weight: 800, align: "center", color: C.brass, alpha: prog(t, s.w(0, "15") - .2, .3) });
     return;
   }
   globe(g, CX, CY + 40, 360, -22, 22, { sunLon: -45, meridians: [[0, "rgba(238,233,223,.85)", 3], [-45, C.brass, 5]] });
@@ -123,9 +123,9 @@ SCENES.v_watch = (g, s) => {
   glowG.addColorStop(0, "rgba(224,169,67,.22)"); glowG.addColorStop(1, "rgba(0,0,0,0)");
   g.fillStyle = glowG; g.fillRect(0, 0, W, H);
   watch(g, CX, CY + 40, 330, 10.13 + T / 3600);
-  const k = prog(t, s.w(1, "5") - .3, .4, easeOut);
+  const k = prog(t, s.w(0, "5") - .3, .4, easeOut);
   text(g, "5 seconds", CX, 300, { size: 130, kind: "serif", weight: 700, align: "center", color: C.brass, alpha: k });
-  text(g, "after the voyage to Jamaica", CX, 1180, { size: 50, weight: 700, align: "center", color: C.bone, alpha: prog(t, s.w(1, "Jamaica") - .3, .3) });
+  text(g, "after the voyage to Jamaica", CX, 1180, { size: 50, weight: 700, align: "center", color: C.bone, alpha: prog(t, s.w(0, "Jamaica") - .3, .3) });
 };
 
 SCENES.v_phone = (g, s) => {
