@@ -239,7 +239,7 @@ SCENES.fleet = (g, s) => {
     g.save(); g.strokeStyle = "rgba(238,233,223,.55)"; g.setLineDash([12, 12]); g.lineWidth = 3;
     const [ax, ay] = proj(-7.4, 49.55, box), [bx, by] = proj(-6.42, 49.87, box);
     g.beginPath(); g.moveTo(ax, ay); g.lineTo(lerp(ax, bx, k), lerp(ay, by, k)); g.stroke(); g.restore();
-    place(g, box, -6.42, 49.87, "Isles of Scilly", "22 October 1707", prog(t, .3, .8), C.signal, 1);
+    place(g, box, -6.42, 49.87, "Isles of Scilly", "22 October 1707 (O.S.)", prog(t, .3, .8), C.signal, 1);
     place(g, box, -5.20, 49.96, "Cornwall", null, prog(t, 1, .8), C.mist, 1);
     const kk = vis(t, s.w(0, "reckoning") - .3, 1e9, .5);
     text(g, "bad charts?  currents?  errors in reckoning?", 1500, 980, { size: 30, color: C.mist, align: "center", alpha: kk });
@@ -292,7 +292,7 @@ SCENES.fleet = (g, s) => {
   g.lineTo(W, H); g.fill();
   if (!wreck) caption(g, t, .6, s.dur - .8, ["October 1707", "A British fleet returning from the Mediterranean"]);
   else {
-    caption(g, t, 1.5, s.dur - .8, ["The Isles of Scilly", "Four ships lost; about 1,400–2,000 men"]);
+    caption(g, t, 1.5, s.dur - .8, ["The Isles of Scilly, 22 October 1707 (Old Style)", "Four ships lost; about 1,400–2,000 men"]);
     text(g, "Sir Cloudesley Shovell", 1800, 150, { size: 30, kind: "serif", weight: 560, align: "right", alpha: vis(t, s.w(0, "admiral") - .3, 1e9, .5) });
     text(g, "commanding the fleet · died in the wreck", 1800, 190, { size: 24, color: C.mist, align: "right", alpha: vis(t, s.w(0, "admiral") - .3, 1e9, .5) });
   }
@@ -584,6 +584,7 @@ SCENES.wood = (g, s) => {
   // accuracy: a second a month
   clockFace(g, 560, 520, 230, 10 + T / 60);
   const k = prog(t, .5, 1);
+  text(g, "Harrison claimed", 1000, 380, { size: 32, color: C.mist, alpha: k });
   text(g, "± 1 second", 1000, 470, { size: 90, kind: "serif", weight: 620, color: C.brass, alpha: k });
   text(g, "per month", 1000, 550, { size: 50, kind: "serif", weight: 500, alpha: k });
   text(g, "mid-1720s, on land", 1000, 620, { size: 30, color: C.mist, alpha: k });
@@ -853,7 +854,7 @@ SCENES.voyage = (g, s) => {
   land(g, ASSETS.atl, box, "#1a212b", "#3a4454", 1.2);
   const ports = { ports: [-1.1, 50.8], jam: [-76.8, 17.95], bar: [-59.6, 13.1], mad: [-16.9, 32.65] };
   const dest = leg === "jamaica" ? ports.jam : ports.bar;
-  const days = leg === "jamaica" ? 81 : 47;
+  const days = leg === "jamaica" ? 62 : 47;   // Deptford: 18 Nov 1761 to 19 Jan 1762
   // route: Portsmouth → Madeira → destination, drawn as a smooth curve (illustrative)
   const P = [ports.ports, ports.mad, [lerp(ports.mad[0], dest[0], .5), lerp(ports.mad[1], dest[1], .5) - 4], dest].map(p => proj(p[0], p[1], box));
   const k = st === "result" ? 1 : prog(t, .5, s.dur - 2, x => x);
@@ -880,7 +881,7 @@ SCENES.voyage = (g, s) => {
     panel([["HMS Deptford · 1761–62", 30, C.bone, 690, 1], [`day ${Math.max(1, Math.round(k * days))} of ${days}`, 64, C.brass, 780, 1], ["with William Harrison", 26, C.mist, 830, vis(t, s.w(0, "William") - .3, 1e9, .5)]]);
   } else if (leg === "jamaica") {
     const a1 = vis(t, s.w(0, "five") - .4, 1e9, .5), a2 = vis(t, s.w(0, "mile") - .5, 1e9, .5);
-    panel([["error on arrival", 28, C.mist, 680, 1], ["5.1 seconds", 80, C.brass, 780, a1], ["≈ 1¼ nautical miles", 40, C.bone, 850, a2], ["after allowing for its known rate", 24, C.mist, 910, vis(t, s.w(0, "allowing") - .3, 1e9, .5)]]);
+    panel([["error on arrival, by William's reckoning", 26, C.mist, 680, 1], ["5.1 seconds", 80, C.brass, 780, a1], ["≈ 1.2 nautical miles", 40, C.bone, 850, a2], ["81 days after its last check", 24, C.mist, 910, vis(t, s.w(0, "eighty") - .3, 1e9, .5)]]);
   } else {
     const done = k > .98;
     panel([["HMS Tartar · 1764", 30, C.bone, 680, 1], [done ? "39.2 seconds" : `day ${Math.max(1, Math.round(k * days))} of ${days}`, 70, C.brass, 770, 1], ["≈ 10 miles", 36, C.bone, 840, vis(t, s.w(0, "ten") - .3, 1e9, .5)], ["3× better than required", 32, C.verd, 900, vis(t, s.w(0, "Three") - .3, 1e9, .5)]]);

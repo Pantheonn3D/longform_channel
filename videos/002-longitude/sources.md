@@ -6,7 +6,7 @@ I checked these claims with web searches in September 2026. Publisher pages were
 
 | Claim in the script | Source |
 |---|---|
-| October 1707: four warships (Association, Eagle, Romney, Firebrand) wrecked on the Isles of Scilly on 22 October; about 1,400–2,000 died; Admiral Sir Cloudesley Shovell among them | Wikipedia, *Scilly naval disaster of 1707*; Royal Museums Greenwich print; Linda Hall Library (summary) |
+| October 1707 (22 Oct Old Style = 2 Nov New Style): four warships (Association, Eagle, Romney, Firebrand) wrecked on the Isles of Scilly on 22 October; about 1,400–2,000 died; Admiral Sir Cloudesley Shovell among them | Wikipedia, *Scilly naval disaster of 1707*; Royal Museums Greenwich print; Linda Hall Library (summary) |
 | Days of bad weather prevented sightings; position estimated wrongly; causes still debated | Wikipedia (summary). The script deliberately doesn't blame longitude alone |
 | Longitude Act 1714: £10,000 / £15,000 / £20,000 for 1° / ⅔° / ½°, tested on a voyage to the West Indies | Wikipedia, *Longitude Act* and *Longitude rewards*; Royal Museums Greenwich (summary) |
 | ½° = 2 minutes of time; 2 min ÷ 42 days ≈ 2.9 s/day; 3 h × 15° = 45° | Arithmetic |
@@ -14,21 +14,21 @@ I checked these claims with web searches in September 2026. Publisher pages were
 | Mayer's lunar tables (1750s) made the lunar method workable; Maskelyne's *Nautical Almanac* from 1767 | NASA ADS / UKHO Nautical Almanac history; Board of Longitude (summary) |
 | Harrison born 1693 in Foulby, Yorkshire; father a carpenter; trained as one | Wikipedia; Antiquarian Horology (summary) |
 | Wooden clocks: oak and lignum vitae, which is self-lubricating | Wikipedia; Whipple Museum (summary) |
-| Gridiron pendulum (1725–28); regulators kept about a second a month by the mid-1720s | Wikipedia (summary) |
+| Gridiron pendulum (1725–28); regulators kept about a second a month by the mid-1720s, **by Harrison's own claim** (star-transit checks, not independently verified), and worded as "claimed" | Wikipedia (summary) |
 | 1730: Harrison to London, Halley sent him to George Graham, who lent him money; H1 took five years (finished 1735) | Wikipedia (summary) |
 | 1736 Lisbon trial (Centurion out, Orford back); Harrison identified the Lizard when officers thought it was Start Point | Royal Museums Greenwich, *Longitude found* (summary). "About sixty miles" is my estimate from the two headlands' positions |
 | H3 1740–1759 (nearly 19 years); bimetallic strip and caged roller bearing; H3 never accurate enough | RMG H3 object page; RMG *Longitude found* (summary) |
 | H4 finished 1759; ~13 cm; balance 2.5 Hz (5 beats a second); diamond pallets ~1×2 mm; bimetallic compensation; fusee | Wikipedia *H4*; SJX Watches; Quill & Pad (summary) |
-| Jamaica trial: HMS Deptford left 18 Nov 1761, William Harrison aboard; 81 days; 5.1 s after allowing for rate | Wikipedia, *John Harrison* (summary) |
-| 5.1 s → 1.28′ of longitude ≈ 1.2 nautical miles at 18°N | Arithmetic |
+| Jamaica trial: HMS Deptford left Portsmouth 18 Nov 1761, reached Jamaica 19 Jan 1762 (~62 days, "about nine weeks"); William Harrison aboard; 5.1 s after allowing for rate, over the 81 days 5 hours since the watch was last checked. The Board rejected it (no rate declared in advance; Jamaica's longitude uncertain), hence the 1764 trial with a pre-declared rate | Wikipedia, *John Harrison* and *HMS Deptford (1732)*; NMM fact file (summary). **Corrected after review:** the first draft said "81 days" at sea |
+| 5.1 s → 1.28′ of longitude ≈ 1.2 nautical miles at 18°N (on screen: "≈ 1.2 nautical miles") | Arithmetic |
 | Barbados trial 1764 (HMS Tartar): 39.2 s over 47 days, three times better than required; ≈ 9.5 nmi at 13°N | Wikipedia (summary); arithmetic |
 | Maskelyne Astronomer Royal 1765; lunar-method advocate on the Board | Wikipedia, *Nevil Maskelyne* (summary) |
 | 1765: half the prize (£10,000) on full disclosure; certificate signed 22 Aug 1765; Kendall's copy K1 | Cambridge Digital Library Board of Longitude papers; Quill & Pad (summary) |
 | K1 with Cook, 1772–75; Cook called it "our trusty friend the Watch" and "our never failing guide" | Royal Museums Greenwich K1 page (summary); Cook's journal wording varies by edition |
-| H5 tested at the King's Observatory, Kew, May–July 1772 | Wikipedia (summary) |
+| H5 built c. 1767–70 (Harrison in his late seventies), tested at the King's Observatory, Kew, May–July 1772 | Wikipedia (summary) |
 | 1773: Parliament awarded £8,750; total £23,065 | Wikipedia; EBSCO Research Starters (summary) |
 | Died 24 March 1776 | Wikipedia |
-| Chronometers descended from Harrison's work became common in the following decades; lunar distances stayed in use alongside them | General history. Stated loosely on purpose ("within a few decades … becoming standard") |
+| Chronometers became common at sea in the following decades, mostly using Arnold's and Earnshaw's simpler detent designs rather than H4's; the Royal Navy issued them routinely only from about the 1820s–40s. Lunar distances stayed in use alongside them | Review note; worded as "other makers had found simpler, cheaper designs" |
 | GPS satellites carry atomic clocks; position from signal timing | General knowledge. #004 will cover this with sources |
 
 ## What's illustrative, and labelled on screen

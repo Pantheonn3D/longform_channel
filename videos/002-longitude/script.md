@@ -68,7 +68,7 @@ He cut the wheels from oak and used lignum vitae, a tropical hardwood so oily th
 Then he tackled temperature. His gridiron pendulum uses rods of steel and brass. Brass expands more than steel when it warms, and the rods are arranged so the steel lets the weight down while the brass pushes it back up. With the right lengths, the two cancel, and the pendulum stays the same length.
 
 @shot wood {"stage": "accuracy"}
-By the mid-1720s, Harrison's best clocks were keeping time to about a second a month, far better than anything in London. But they still had pendulums.
+By the mid-1720s, Harrison claimed his best clocks were keeping time to about a second a month, far better than anything in London. But they still had pendulums.
 
 # Four machines
 
@@ -107,13 +107,13 @@ To keep the drive steady, H4 uses a fusee, a cone-shaped pulley. When the mainsp
 # The voyages
 
 @shot voyage {"leg": "jamaica"}
-In November 1761, H4 sailed for Jamaica aboard HMS Deptford, in the care of Harrison's son, William. The voyage took eighty one days.
+In November 1761, H4 sailed for Jamaica aboard HMS Deptford, in the care of Harrison's son, William. The crossing took about nine weeks.
 
 @shot voyage {"leg": "jamaica", "stage": "result"}
-When they arrived, after allowing for its known rate, the watch was just over five seconds out. Five seconds after nearly twelve weeks at sea. In longitude, that's an error of little more than a mile.
+When they arrived, William worked out that, after allowing for its rate, the watch was just over five seconds out, eighty one days after it had last been checked. In longitude, that's an error of little more than a mile.
 
 @shot voyage {"leg": "barbados"}
-The Board of Longitude, which ran the prize, wanted more proof. In 1764, H4 went to Barbados. Over forty seven days, its error was thirty nine seconds, about ten miles. Three times better than the prize demanded.
+The Board of Longitude, which ran the prize, wasn't satisfied. Harrison hadn't declared the watch's rate in advance, and even Jamaica's own longitude was uncertain. So in 1764, with the rate stated before sailing, H4 went to Barbados. Over forty seven days, its error was thirty nine seconds, about ten miles. Three times better than the prize demanded.
 
 # The prize
 
@@ -127,7 +127,7 @@ So in 1765 Harrison was paid half the prize, ten thousand pounds, on condition t
 That copy, known as K1, sailed to the Pacific with Captain James Cook on his second voyage, from 1772 to 1775. Cook called it his trusty friend and never-failing guide.
 
 @shot board {"stage": "king"}
-Meanwhile Harrison, nearly eighty, built one more watch, H5. It was tested at King George the Third's observatory at Kew in 1772, and the King took Harrison's side. In 1773, Parliament awarded Harrison a further eight thousand seven hundred and fifty pounds.
+Meanwhile Harrison, now in his late seventies, built one more watch, H5. It was tested at King George the Third's observatory at Kew in 1772, and the King took Harrison's side. In 1773, Parliament awarded Harrison a further eight thousand seven hundred and fifty pounds.
 
 @shot board {"stage": "ledger"}
 Over the years he'd received more than twenty three thousand pounds, more than the prize itself. But the Board never formally declared that he had won it. He died in 1776.
@@ -135,7 +135,7 @@ Over the years he'd received more than twenty three thousand pounds, more than t
 # Still keeping time
 
 @shot outro {}
-Within a few decades, marine chronometers built on Harrison's ideas were becoming standard at sea. The lunar method didn't vanish either. Navigators used both, and each checked the other.
+Within a few decades, other makers had found simpler, cheaper designs, and marine chronometers were becoming common at sea. The lunar method didn't vanish either. Navigators used both, and each checked the other.
 
 @shot gps {}
 And the idea underneath never went away. Your phone finds its position by timing signals from satellites, each one carrying an atomic clock. Finding where you are is still a question of knowing exactly what time it is. That's a story for another video.

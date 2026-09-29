@@ -7,7 +7,7 @@
 <script src="../scenes.js"></script>
 <script>
 // Thumbnails for #002, drawn at 1920×1080 and downscaled by make.py, which injects ASSETS then calls draw().
-// #a: H4 with "5 SECONDS OFF"   #b: wreck at night, "LOST AT SEA"   #c: globe + clock, "TIME = PLACE"
+// #a: H4 with "5 SECONDS OFF" (after the Jamaica voyage; not "81 days at sea", which was time since its last check)   #b: wreck at night, "LOST AT SEA"   #c: globe + clock, "TIME = PLACE"
 const g = document.getElementById("c").getContext("2d");
 const v = location.hash.slice(1) || "a";
 
@@ -30,7 +30,7 @@ function draw() {
     watch(g, 620, 590, 360, 10.13);
     big("5 SECONDS", 1060, 470, 128, C.brass);
     big("OFF", 1060, 600, 128, C.bone);
-    big("after 81 days at sea", 1066, 680, 52, C.mist, { weight: 600 });
+    big("after the voyage to Jamaica", 1066, 680, 48, C.mist, { weight: 600 });
   }
   if (v === "b") {
     const T = 3.2;
