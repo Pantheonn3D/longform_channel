@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Video file | `out/002-longitude.mp4` (1920×1080, 30 fps, 10:23) |
+| Video file | `out/002-longitude.mp4` (1920×1080, 30 fps, 10:23, −14.7 LUFS). 2-pass 1.05 Mbps copy (92 MB) to fit GitHub; `python engine/render.py videos/002-longitude` recreates the ~106 MB master |
 | Thumbnails | `thumbnail/thumb-a.jpg`, `thumb-b.jpg`, `thumb-c.jpg` (1280×720). Starting points for your AI iterations, as with #001 |
 | Captions | `captions.en.srt` |
 | Voice | Same Kokoro voice as #001 |
