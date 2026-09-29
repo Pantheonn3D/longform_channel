@@ -1,0 +1,33 @@
+{
+  "text": {
+    "\\b1707\\b": "seventeen oh seven",
+    "\\b1714\\b": "seventeen fourteen",
+    "\\b1693\\b": "sixteen ninety-three",
+    "\\b1720s\\b": "seventeen-twenties",
+    "\\b1730\\b": "seventeen thirty",
+    "\\b1736\\b": "seventeen thirty-six",
+    "\\b1750s\\b": "seventeen-fifties",
+    "\\b1759\\b": "seventeen fifty-nine",
+    "\\b1761\\b": "seventeen sixty-one",
+    "\\b1764\\b": "seventeen sixty-four",
+    "\\b1765\\b": "seventeen sixty-five",
+    "\\b1772\\b": "seventeen seventy-two",
+    "\\b1773\\b": "seventeen seventy-three",
+    "\\b1775\\b": "seventeen seventy-five",
+    "\\b1776\\b": "seventeen seventy-six",
+    "\\bK1\\b": "K one",
+    "\\bH1\\b": "H one",
+    "\\bH3\\b": "H three",
+    "\\bH4\\b": "H four",
+    "\\bH5\\b": "H five",
+    "\\bHMS\\b": "H.M.S."
+  },
+  "ipa": {
+    "Cloudesley": "klˈaʊdzli",
+    "Shovell": "ʃˈʌvəl",
+    "Maskelyne": "mˈæskəlɪn",
+    "vitae": "vˈaɪtiː",
+    "Deptford": "dˈɛtfɚd",
+    "fusee": "fjuːzˈiː"
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../engine/brand.css">
+<style>html, body { margin: 0; overflow: hidden; } canvas { display: block; }</style>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script src="../../../engine/lib.js"></script>
+<script src="../scenes.js"></script>
+<script>
+// Thumbnails for #002, drawn at 1920×1080 and downscaled by make.py, which injects ASSETS then calls draw().
+// #a: H4 with "5 SECONDS OFF"   #b: wreck at night, "LOST AT SEA"   #c: globe + clock, "TIME = PLACE"
+const g = document.getElementById("c").getContext("2d");
+const v = location.hash.slice(1) || "a";
+
+function big(str, x, y, size, color, o = {}) {
+  g.save();
+  g.shadowColor = "rgba(0,0,0,.75)"; g.shadowBlur = 26; g.shadowOffsetY = 6;
+  text(g, str, x, y, { size, kind: o.kind ?? "sans", weight: o.weight ?? 800, color, align: o.align ?? "left", tracking: o.tracking ?? 0 });
+  g.restore();
+}
+function glow(x, y, r, col) {
+  const gr = g.createRadialGradient(x, y, 0, x, y, r);
+  gr.addColorStop(0, col); gr.addColorStop(1, "rgba(0,0,0,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, W, H);
+}
+
+function draw() {
+  if (v === "a") {
+    bg(g, "#18212d", "#080b10");
+    glow(620, 560, 650, "rgba(224,169,67,.28)");
+    watch(g, 620, 590, 360, 10.13);
+    big("5 SECONDS", 1060, 470, 128, C.brass);
+    big("OFF", 1060, 600, 128, C.bone);
+    big("after 81 days at sea", 1066, 680, 52, C.mist, { weight: 600 });
+  }
+  if (v === "b") {
+    const T = 3.2;
+    const sky = g.createLinearGradient(0, 0, 0, 640);
+    sky.addColorStop(0, "#070a0f"); sky.addColorStop(1, "#1d2837");
+    g.fillStyle = sky; g.fillRect(0, 0, W, H);
+    glow(1450, 250, 420, "rgba(224,169,67,.35)");
+    watch(g, 1450, 260, 150, 10.13);
+    sea(g, T, 700, 4, L => `rgb(${12 + L * 3},${19 + L * 4},${28 + L * 5})`);
+    tallShip(g, 620, 700, 1.25, .32, "#030405", .8);
+    g.fillStyle = "#030405";
+    [[980, 140, 200], [1260, 90, 150]].forEach(([rx, h, w]) => { g.beginPath(); g.moveTo(rx - w, H); g.lineTo(rx - w * .2, 800 - h); g.lineTo(rx + w * .3, 820 - h * .6); g.lineTo(rx + w, H); g.fill(); });
+    big("LOST", 90, 240, 170, C.bone);
+    big("AT SEA", 90, 400, 170, C.brass);
+  }
+  if (v === "c") {
+    bg(g, "#131b26", "#070a0f");
+    globe(g, 640, 560, 430, -30, 20, { sunLon: -45, meridians: Array.from({ length: 12 }, (_, i) => [i * 30, "rgba(224,169,67,.55)", 2.5]) });
+    clockFace(g, 900, 330, 150, 15.0);
+    big("TIME", 1180, 480, 150, C.bone);
+    big("= PLACE", 1180, 640, 150, C.brass);
+  }
+  window.done = true;
+}
+Promise.all(["800 100px Inter", "600 60px Inter", "600 60px Fraunces"].map(f => document.fonts.load(f))).then(() => { window.fontsReady = true; });
+</script>
