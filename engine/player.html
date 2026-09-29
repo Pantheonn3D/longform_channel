@@ -7,8 +7,10 @@
 <script>
 // The player turns timeline.json (from tts.py) into shots and draws any frame on demand.
 // render.py sets window.TIMELINE / window.ASSETS, loads the video's scenes.js, then calls frame(t) per frame.
-const ctx = document.getElementById("c").getContext("2d");
-const XFADE = .7;
+const canvas = document.getElementById("c");
+canvas.width = W; canvas.height = H;
+const ctx = canvas.getContext("2d");
+const XFADE = (window.CONFIG && CONFIG.xfade) || .7;
 let SHOTS = [], CHAPTERS = [];
 
 function setup() {
@@ -82,7 +84,41 @@ function frame(T) {
       ctx.restore();
     }
   });
+  if (window.CONFIG && CONFIG.captions) burnedCaptions(T);
   finish(ctx);
+}
+
+// Word-by-word captions for shorts: chunks of up to three words, the spoken word highlighted.
+function burnedCaptions(T) {
+  const b = TIMELINE.beats.find(b => b.words && T >= b.start - .05 && T < b.end + .25);
+  if (!b) return;
+  const chunks = [];
+  let cur = [];
+  b.words.forEach(([w, t], i) => {
+    cur.push([w, t]);
+    const len = cur.map(x => x[0]).join(" ").length;
+    if (cur.length === 3 || len > 16 || /[.,;:!?]$/.test(w) || i === b.words.length - 1) { chunks.push(cur); cur = []; }
+  });
+  const rel = T - b.start;
+  let ci = chunks.findIndex((c, i) => rel >= c[0][1] - .05 && (i + 1 === chunks.length || rel < chunks[i + 1][0][1] - .05));
+  if (ci < 0) ci = 0;
+  const words = chunks[ci];
+  const y = CONFIG.captionY ?? H * .69, size = CONFIG.captionSize ?? 84;
+  ctx.save();
+  ctx.font = font(size, "sans", 800);
+  const clean = words.map(([w]) => w.replace(/[,;:]$/, ""));
+  const widths = clean.map(w => ctx.measureText(w).width), gap = size * .28;
+  let x = W / 2 - (widths.reduce((a, b) => a + b, 0) + gap * (clean.length - 1)) / 2;
+  clean.forEach((w, i) => {
+    const on = rel >= words[i][1] - .05;
+    ctx.lineWidth = size * .16; ctx.lineJoin = "round"; ctx.strokeStyle = "rgba(0,0,0,.85)";
+    ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    ctx.strokeText(w, x, y);
+    ctx.fillStyle = on && /\d/.test(w) ? C.brass : on ? C.bone : "rgba(238,233,223,.55)";
+    ctx.fillText(w, x, y);
+    x += widths[i] + gap;
+  });
+  ctx.restore();
 }
 
 function loadScenes(src) {

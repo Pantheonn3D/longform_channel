@@ -1,0 +1,9 @@
+{
+  "size": [1080, 1920],
+  "speed": 1.02,
+  "gaps": [0.15, 0.12, 0.22, 0.3],
+  "include": ["../scenes.js"],
+  "assets": "../assets",
+  "captions": false,
+  "xfade": 0.25
+}

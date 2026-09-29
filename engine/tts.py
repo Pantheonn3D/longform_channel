@@ -36,10 +36,10 @@ def spoken(text, pronounce):
 class Kokoro:
     name = "kokoro"
 
-    def __init__(self):
+    def __init__(self, speed=None):
         from kokoro_onnx import Kokoro as K
         self.voice = os.environ.get("KOKORO_VOICE", "af_heart")
-        self.speed = float(os.environ.get("KOKORO_SPEED", "0.88"))
+        self.speed = speed or float(os.environ.get("KOKORO_SPEED", "0.88"))
         self.k = K(str(MODELS / "kokoro-v1.0.onnx"), str(MODELS / "voices-v1.0.bin"))
 
     def synth(self, text, out, ipa=None, **_):
@@ -55,7 +55,7 @@ class ElevenLabs:
     """Untested from this environment: api.elevenlabs.io is blocked by its network policy."""
     name = "elevenlabs"
 
-    def __init__(self):
+    def __init__(self, speed=None):
         self.key = os.environ["ELEVENLABS_API_KEY"]
         self.voice = os.environ["ELEVENLABS_VOICE_ID"]
         self.model = os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2")
@@ -105,16 +105,20 @@ def build(video):
     beats = parse(video / "script.md")
     pron_file = video / "pronounce.json"
     pronounce = json.loads(pron_file.read_text()) if pron_file.exists() else {}
-    tts = ElevenLabs() if os.environ.get("TTS") == "elevenlabs" else Kokoro()
+    # Optional per-video config.json: {"speed": 1.0, "gaps": [lead_in, beat, shot, chapter]} (shorts run faster and tighter)
+    cfg_file = video / "config.json"
+    cfg = json.loads(cfg_file.read_text()) if cfg_file.exists() else {}
+    lead_in, gap_beat, gap_shot, gap_chapter = cfg.get("gaps", [LEAD_IN, GAP_BEAT, GAP_SHOT, GAP_CHAPTER])
+    tts = (ElevenLabs if os.environ.get("TTS") == "elevenlabs" else Kokoro)(cfg.get("speed"))
     cache = video / "build" / "beats"
     cache.mkdir(parents=True, exist_ok=True)
 
     spoken_texts = [spoken(b["text"], pronounce) for b in beats]
-    t = LEAD_IN
-    chunks = [np.zeros(int(LEAD_IN * SR), np.float32)]
+    t = lead_in
+    chunks = [np.zeros(int(lead_in * SR), np.float32)]
     for i, b in enumerate(beats):
         if i > 0:
-            gap = GAP_CHAPTER if b["chapter"] != beats[i - 1]["chapter"] else GAP_SHOT if b["shot"] != beats[i - 1]["shot"] else GAP_BEAT
+            gap = gap_chapter if b["chapter"] != beats[i - 1]["chapter"] else gap_shot if b["shot"] != beats[i - 1]["shot"] else gap_beat
             chunks.append(np.zeros(int(gap * SR), np.float32))
             t += gap
         if b["text"]:

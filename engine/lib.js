@@ -1,6 +1,7 @@
 // Orrery drawing library: deterministic canvas helpers shared by every video's scenes.
 // Everything is a pure function of time, so any frame can be rendered in any order.
-const W = 1920, H = 1080;
+// Frame size: 1920×1080 unless the page sets window.SIZE first (vertical shorts use 1080×1920).
+const W = (window.SIZE || [1920, 1080])[0], H = (window.SIZE || [1920, 1080])[1];
 const C = {
   ink: "#0d1117", ink2: "#161c25", ink3: "#232b37", line: "#3a4454",
   brass: "#e0a943", brassDim: "#9c7631", verd: "#4fb3a2", signal: "#ef5b3f",

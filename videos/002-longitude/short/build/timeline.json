@@ -1,0 +1,716 @@
+{
+ "duration": 51.154,
+ "beats": [
+  {
+   "chapter": null,
+   "shot": 0,
+   "scene": "v_compass",
+   "params": {},
+   "text": "In 1700, a sailor could measure how far north he was. How far east or west was a guess.",
+   "start": 0.15,
+   "end": 6.191,
+   "words": [
+    [
+     "In",
+     0.0
+    ],
+    [
+     "1700,",
+     0.181
+    ],
+    [
+     "a",
+     0.665
+    ],
+    [
+     "sailor",
+     0.785
+    ],
+    [
+     "could",
+     1.208
+    ],
+    [
+     "measure",
+     1.571
+    ],
+    [
+     "how",
+     2.054
+    ],
+    [
+     "far",
+     2.296
+    ],
+    [
+     "north",
+     2.537
+    ],
+    [
+     "he",
+     2.9
+    ],
+    [
+     "was.",
+     3.081
+    ],
+    [
+     "How",
+     3.685
+    ],
+    [
+     "far",
+     3.927
+    ],
+    [
+     "east",
+     4.169
+    ],
+    [
+     "or",
+     4.471
+    ],
+    [
+     "west",
+     4.652
+    ],
+    [
+     "was",
+     4.954
+    ],
+    [
+     "a",
+     5.196
+    ],
+    [
+     "guess.",
+     5.316
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 1,
+   "scene": "v_wreck",
+   "params": {},
+   "text": "In 1707, a navigation error put four warships on the rocks of Scilly, and more than 1,400 men died.",
+   "start": 6.411,
+   "end": 13.401,
+   "words": [
+    [
+     "In",
+     0.0
+    ],
+    [
+     "1707,",
+     0.192
+    ],
+    [
+     "a",
+     0.705
+    ],
+    [
+     "navigation",
+     0.834
+    ],
+    [
+     "error",
+     1.539
+    ],
+    [
+     "put",
+     1.924
+    ],
+    [
+     "four",
+     2.18
+    ],
+    [
+     "warships",
+     2.501
+    ],
+    [
+     "on",
+     3.078
+    ],
+    [
+     "the",
+     3.271
+    ],
+    [
+     "rocks",
+     3.527
+    ],
+    [
+     "of",
+     3.912
+    ],
+    [
+     "Scilly,",
+     4.104
+    ],
+    [
+     "and",
+     4.745
+    ],
+    [
+     "more",
+     5.002
+    ],
+    [
+     "than",
+     5.323
+    ],
+    [
+     "1,400",
+     5.643
+    ],
+    [
+     "men",
+     6.028
+    ],
+    [
+     "died.",
+     6.285
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 2,
+   "scene": "v_prize",
+   "params": {},
+   "text": "So in 1714, Britain offered \u00a320,000 for a way to find longitude at sea.",
+   "start": 13.621,
+   "end": 19.696,
+   "words": [
+    [
+     "So",
+     0.0
+    ],
+    [
+     "in",
+     0.231
+    ],
+    [
+     "1714,",
+     0.461
+    ],
+    [
+     "Britain",
+     1.077
+    ],
+    [
+     "offered",
+     1.692
+    ],
+    [
+     "\u00a320,000",
+     2.307
+    ],
+    [
+     "for",
+     2.922
+    ],
+    [
+     "a",
+     3.23
+    ],
+    [
+     "way",
+     3.383
+    ],
+    [
+     "to",
+     3.691
+    ],
+    [
+     "find",
+     3.922
+    ],
+    [
+     "longitude",
+     4.306
+    ],
+    [
+     "at",
+     5.075
+    ],
+    [
+     "sea.",
+     5.306
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 3,
+   "scene": "v_globe",
+   "params": {
+    "stage": "turn"
+   },
+   "text": "The answer was time. The Earth turns 15 degrees every hour.",
+   "start": 19.916,
+   "end": 23.507,
+   "words": [
+    [
+     "The",
+     0.0
+    ],
+    [
+     "answer",
+     0.205
+    ],
+    [
+     "was",
+     0.564
+    ],
+    [
+     "time.",
+     0.769
+    ],
+    [
+     "The",
+     1.334
+    ],
+    [
+     "Earth",
+     1.539
+    ],
+    [
+     "turns",
+     1.847
+    ],
+    [
+     "15",
+     2.154
+    ],
+    [
+     "degrees",
+     2.308
+    ],
+    [
+     "every",
+     2.719
+    ],
+    [
+     "hour.",
+     3.026
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 4,
+   "scene": "v_globe",
+   "params": {
+    "stage": "noon"
+   },
+   "text": "So if you carry a clock set to home time, the gap between it and your local noon tells you how far west you've come.",
+   "start": 23.727,
+   "end": 30.2,
+   "words": [
+    [
+     "So",
+     0.0
+    ],
+    [
+     "if",
+     0.157
+    ],
+    [
+     "you",
+     0.313
+    ],
+    [
+     "carry",
+     0.522
+    ],
+    [
+     "a",
+     0.835
+    ],
+    [
+     "clock",
+     0.94
+    ],
+    [
+     "set",
+     1.253
+    ],
+    [
+     "to",
+     1.462
+    ],
+    [
+     "home",
+     1.618
+    ],
+    [
+     "time,",
+     1.879
+    ],
+    [
+     "the",
+     2.297
+    ],
+    [
+     "gap",
+     2.506
+    ],
+    [
+     "between",
+     2.714
+    ],
+    [
+     "it",
+     3.132
+    ],
+    [
+     "and",
+     3.289
+    ],
+    [
+     "your",
+     3.498
+    ],
+    [
+     "local",
+     3.759
+    ],
+    [
+     "noon",
+     4.072
+    ],
+    [
+     "tells",
+     4.333
+    ],
+    [
+     "you",
+     4.646
+    ],
+    [
+     "how",
+     4.855
+    ],
+    [
+     "far",
+     5.064
+    ],
+    [
+     "west",
+     5.272
+    ],
+    [
+     "you've",
+     5.533
+    ],
+    [
+     "come.",
+     5.899
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 5,
+   "scene": "v_tight",
+   "params": {},
+   "text": "But that clock had to drift less than 3 seconds a day, on a rolling ship.",
+   "start": 30.42,
+   "end": 34.338,
+   "words": [
+    [
+     "But",
+     0.0
+    ],
+    [
+     "that",
+     0.193
+    ],
+    [
+     "clock",
+     0.435
+    ],
+    [
+     "had",
+     0.726
+    ],
+    [
+     "to",
+     0.919
+    ],
+    [
+     "drift",
+     1.064
+    ],
+    [
+     "less",
+     1.354
+    ],
+    [
+     "than",
+     1.596
+    ],
+    [
+     "3",
+     1.838
+    ],
+    [
+     "seconds",
+     1.935
+    ],
+    [
+     "a",
+     2.322
+    ],
+    [
+     "day,",
+     2.419
+    ],
+    [
+     "on",
+     2.757
+    ],
+    [
+     "a",
+     2.902
+    ],
+    [
+     "rolling",
+     2.999
+    ],
+    [
+     "ship.",
+     3.386
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 6,
+   "scene": "v_harrison",
+   "params": {},
+   "text": "A self-taught carpenter, John Harrison, spent nearly 30 years building clocks for the sea.",
+   "start": 34.558,
+   "end": 39.685,
+   "words": [
+    [
+     "A",
+     0.0
+    ],
+    [
+     "self-taught",
+     0.103
+    ],
+    [
+     "carpenter,",
+     0.718
+    ],
+    [
+     "John",
+     1.384
+    ],
+    [
+     "Harrison,",
+     1.641
+    ],
+    [
+     "spent",
+     2.256
+    ],
+    [
+     "nearly",
+     2.564
+    ],
+    [
+     "30",
+     2.922
+    ],
+    [
+     "years",
+     3.076
+    ],
+    [
+     "building",
+     3.384
+    ],
+    [
+     "clocks",
+     3.845
+    ],
+    [
+     "for",
+     4.204
+    ],
+    [
+     "the",
+     4.409
+    ],
+    [
+     "sea.",
+     4.614
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 7,
+   "scene": "v_watch",
+   "params": {},
+   "text": "His fourth was a watch. On its trial voyage to Jamaica, it was reckoned to be just 5 seconds out.",
+   "start": 39.905,
+   "end": 46.014,
+   "words": [
+    [
+     "His",
+     0.0
+    ],
+    [
+     "fourth",
+     0.222
+    ],
+    [
+     "was",
+     0.611
+    ],
+    [
+     "a",
+     0.833
+    ],
+    [
+     "watch.",
+     0.944
+    ],
+    [
+     "On",
+     1.611
+    ],
+    [
+     "its",
+     1.777
+    ],
+    [
+     "trial",
+     1.999
+    ],
+    [
+     "voyage",
+     2.333
+    ],
+    [
+     "to",
+     2.721
+    ],
+    [
+     "Jamaica,",
+     2.888
+    ],
+    [
+     "it",
+     3.499
+    ],
+    [
+     "was",
+     3.665
+    ],
+    [
+     "reckoned",
+     3.888
+    ],
+    [
+     "to",
+     4.387
+    ],
+    [
+     "be",
+     4.554
+    ],
+    [
+     "just",
+     4.721
+    ],
+    [
+     "5",
+     4.998
+    ],
+    [
+     "seconds",
+     5.109
+    ],
+    [
+     "out.",
+     5.554
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 8,
+   "scene": "v_phone",
+   "params": {},
+   "text": "And your phone still finds you the same way: by timing clocks in space.",
+   "start": 46.234,
+   "end": 50.154,
+   "words": [
+    [
+     "And",
+     0.0
+    ],
+    [
+     "your",
+     0.198
+    ],
+    [
+     "phone",
+     0.447
+    ],
+    [
+     "still",
+     0.744
+    ],
+    [
+     "finds",
+     1.042
+    ],
+    [
+     "you",
+     1.34
+    ],
+    [
+     "the",
+     1.538
+    ],
+    [
+     "same",
+     1.737
+    ],
+    [
+     "way:",
+     1.985
+    ],
+    [
+     "by",
+     2.332
+    ],
+    [
+     "timing",
+     2.481
+    ],
+    [
+     "clocks",
+     2.828
+    ],
+    [
+     "in",
+     3.176
+    ],
+    [
+     "space.",
+     3.324
+    ]
+   ]
+  }
+ ]
+}

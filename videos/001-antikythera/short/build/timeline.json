@@ -1,0 +1,632 @@
+{
+ "duration": 47.515,
+ "beats": [
+  {
+   "chapter": null,
+   "shot": 0,
+   "scene": "v_lump",
+   "params": {},
+   "text": "This lump of bronze is a 2,000-year-old computer.",
+   "start": 0.15,
+   "end": 3.175,
+   "words": [
+    [
+     "This",
+     0.0
+    ],
+    [
+     "lump",
+     0.275
+    ],
+    [
+     "of",
+     0.55
+    ],
+    [
+     "bronze",
+     0.715
+    ],
+    [
+     "is",
+     1.1
+    ],
+    [
+     "a",
+     1.265
+    ],
+    [
+     "2,000-year-old",
+     1.375
+    ],
+    [
+     "computer.",
+     2.2
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 1,
+   "scene": "v_lump",
+   "params": {
+    "reveal": true
+   },
+   "text": "Divers pulled it from an ancient shipwreck off Greece in 1901, and hidden inside were 30 hand-cut gears.",
+   "start": 3.395,
+   "end": 10.173,
+   "words": [
+    [
+     "Divers",
+     0.0
+    ],
+    [
+     "pulled",
+     0.424
+    ],
+    [
+     "it",
+     0.847
+    ],
+    [
+     "from",
+     1.029
+    ],
+    [
+     "an",
+     1.331
+    ],
+    [
+     "ancient",
+     1.513
+    ],
+    [
+     "shipwreck",
+     1.997
+    ],
+    [
+     "off",
+     2.602
+    ],
+    [
+     "Greece",
+     2.844
+    ],
+    [
+     "in",
+     3.268
+    ],
+    [
+     "1901,",
+     3.45
+    ],
+    [
+     "and",
+     3.934
+    ],
+    [
+     "hidden",
+     4.176
+    ],
+    [
+     "inside",
+     4.599
+    ],
+    [
+     "were",
+     5.023
+    ],
+    [
+     "30",
+     5.326
+    ],
+    [
+     "hand-cut",
+     5.507
+    ],
+    [
+     "gears.",
+     6.052
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 2,
+   "scene": "v_dial",
+   "params": {},
+   "text": "Turn its handle, and it shows where the Sun and Moon are in the sky, the Moon's phase, and which months bring eclipses.",
+   "start": 10.393,
+   "end": 16.698,
+   "words": [
+    [
+     "Turn",
+     0.0
+    ],
+    [
+     "its",
+     0.241
+    ],
+    [
+     "handle,",
+     0.433
+    ],
+    [
+     "and",
+     0.915
+    ],
+    [
+     "it",
+     1.107
+    ],
+    [
+     "shows",
+     1.251
+    ],
+    [
+     "where",
+     1.54
+    ],
+    [
+     "the",
+     1.829
+    ],
+    [
+     "Sun",
+     2.022
+    ],
+    [
+     "and",
+     2.214
+    ],
+    [
+     "Moon",
+     2.407
+    ],
+    [
+     "are",
+     2.647
+    ],
+    [
+     "in",
+     2.84
+    ],
+    [
+     "the",
+     2.984
+    ],
+    [
+     "sky,",
+     3.177
+    ],
+    [
+     "the",
+     3.514
+    ],
+    [
+     "Moon's",
+     3.706
+    ],
+    [
+     "phase,",
+     4.043
+    ],
+    [
+     "and",
+     4.476
+    ],
+    [
+     "which",
+     4.669
+    ],
+    [
+     "months",
+     4.958
+    ],
+    [
+     "bring",
+     5.295
+    ],
+    [
+     "eclipses.",
+     5.583
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 3,
+   "scene": "v_train",
+   "params": {},
+   "text": "The trick is arithmetic, done in bronze.",
+   "start": 16.918,
+   "end": 19.079,
+   "words": [
+    [
+     "The",
+     0.0
+    ],
+    [
+     "trick",
+     0.18
+    ],
+    [
+     "is",
+     0.45
+    ],
+    [
+     "arithmetic,",
+     0.585
+    ],
+    [
+     "done",
+     1.216
+    ],
+    [
+     "in",
+     1.441
+    ],
+    [
+     "bronze.",
+     1.576
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 3,
+   "scene": "v_train",
+   "params": {},
+   "text": "64 over 38, times 48 over 24, times 127 over 32.",
+   "start": 19.199,
+   "end": 25.648,
+   "words": [
+    [
+     "64",
+     0.0
+    ],
+    [
+     "over",
+     0.334
+    ],
+    [
+     "38,",
+     0.889
+    ],
+    [
+     "times",
+     1.557
+    ],
+    [
+     "48",
+     2.224
+    ],
+    [
+     "over",
+     2.557
+    ],
+    [
+     "24,",
+     3.113
+    ],
+    [
+     "times",
+     3.78
+    ],
+    [
+     "127",
+     4.447
+    ],
+    [
+     "over",
+     4.892
+    ],
+    [
+     "32.",
+     5.448
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 3,
+   "scene": "v_train",
+   "params": {},
+   "text": "That's exactly 254 over 19.",
+   "start": 25.768,
+   "end": 28.491,
+   "words": [
+    [
+     "That's",
+     0.0
+    ],
+    [
+     "exactly",
+     0.578
+    ],
+    [
+     "254",
+     1.238
+    ],
+    [
+     "over",
+     1.568
+    ],
+    [
+     "19.",
+     1.981
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 4,
+   "scene": "v_moon",
+   "params": {},
+   "text": "And 254 is how many times the Moon laps the sky in 19 years.",
+   "start": 28.711,
+   "end": 33.383,
+   "words": [
+    [
+     "And",
+     0.0
+    ],
+    [
+     "254",
+     0.283
+    ],
+    [
+     "is",
+     0.566
+    ],
+    [
+     "how",
+     0.779
+    ],
+    [
+     "many",
+     1.062
+    ],
+    [
+     "times",
+     1.416
+    ],
+    [
+     "the",
+     1.84
+    ],
+    [
+     "Moon",
+     2.123
+    ],
+    [
+     "laps",
+     2.477
+    ],
+    [
+     "the",
+     2.831
+    ],
+    [
+     "sky",
+     3.114
+    ],
+    [
+     "in",
+     3.397
+    ],
+    [
+     "19",
+     3.61
+    ],
+    [
+     "years.",
+     3.822
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 5,
+   "scene": "v_pin",
+   "params": {},
+   "text": "There's even a pin riding in a slot, so the Moon pointer speeds up and slows down, just like the real Moon.",
+   "start": 33.603,
+   "end": 39.719,
+   "words": [
+    [
+     "There's",
+     0.0
+    ],
+    [
+     "even",
+     0.418
+    ],
+    [
+     "a",
+     0.68
+    ],
+    [
+     "pin",
+     0.784
+    ],
+    [
+     "riding",
+     0.993
+    ],
+    [
+     "in",
+     1.359
+    ],
+    [
+     "a",
+     1.516
+    ],
+    [
+     "slot,",
+     1.621
+    ],
+    [
+     "so",
+     2.039
+    ],
+    [
+     "the",
+     2.196
+    ],
+    [
+     "Moon",
+     2.405
+    ],
+    [
+     "pointer",
+     2.666
+    ],
+    [
+     "speeds",
+     3.084
+    ],
+    [
+     "up",
+     3.45
+    ],
+    [
+     "and",
+     3.607
+    ],
+    [
+     "slows",
+     3.816
+    ],
+    [
+     "down,",
+     4.13
+    ],
+    [
+     "just",
+     4.548
+    ],
+    [
+     "like",
+     4.809
+    ],
+    [
+     "the",
+     5.071
+    ],
+    [
+     "real",
+     5.28
+    ],
+    [
+     "Moon.",
+     5.541
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 6,
+   "scene": "v_gap",
+   "params": {},
+   "text": "Nothing with gearing this complex survives for more than a thousand years afterwards.",
+   "start": 39.939,
+   "end": 44.477,
+   "words": [
+    [
+     "Nothing",
+     0.0
+    ],
+    [
+     "with",
+     0.399
+    ],
+    [
+     "gearing",
+     0.648
+    ],
+    [
+     "this",
+     1.047
+    ],
+    [
+     "complex",
+     1.297
+    ],
+    [
+     "survives",
+     1.696
+    ],
+    [
+     "for",
+     2.145
+    ],
+    [
+     "more",
+     2.344
+    ],
+    [
+     "than",
+     2.593
+    ],
+    [
+     "a",
+     2.843
+    ],
+    [
+     "thousand",
+     2.943
+    ],
+    [
+     "years",
+     3.391
+    ],
+    [
+     "afterwards.",
+     3.691
+    ]
+   ]
+  },
+  {
+   "chapter": null,
+   "shot": 7,
+   "scene": "v_lump",
+   "params": {
+    "reveal": true,
+    "end": true
+   },
+   "text": "All of it, hidden inside this lump.",
+   "start": 44.697,
+   "end": 46.515,
+   "words": [
+    [
+     "All",
+     0.0
+    ],
+    [
+     "of",
+     0.169
+    ],
+    [
+     "it,",
+     0.296
+    ],
+    [
+     "hidden",
+     0.549
+    ],
+    [
+     "inside",
+     0.845
+    ],
+    [
+     "this",
+     1.141
+    ],
+    [
+     "lump.",
+     1.352
+    ]
+   ]
+  }
+ ]
+}

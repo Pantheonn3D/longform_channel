@@ -21,15 +21,28 @@ sys.path.insert(0, str(ENGINE))
 from snap import launch  # noqa: E402
 
 
+def config(video):
+    f = video / "config.json"
+    return json.loads(f.read_text()) if f.exists() else {}
+
+
 def open_player(p, video):
+    cfg = config(video)
+    w, h = cfg.get("size", [1920, 1080])
     browser = launch(p)
-    page = browser.new_page(viewport={"width": 1920, "height": 1080})
+    page = browser.new_page(viewport={"width": w, "height": h})
+    # SIZE must exist before lib.js runs; CONFIG drives options such as burned-in captions
+    page.add_init_script(f"window.SIZE = {json.dumps([w, h])}; window.CONFIG = {json.dumps(cfg)};")
     page.on("console", lambda m: print("  [page]", m.text) if m.type in ("error", "warning") else None)
     page.on("pageerror", lambda e: print("  [page error]", e))
     page.goto((ENGINE / "player.html").resolve().as_uri())
-    assets = {f.stem: json.loads(f.read_text()) for f in (video / "assets").glob("*.json")} if (video / "assets").exists() else {}
+    # a short can borrow its parent video's assets and drawing helpers
+    asset_dir = (video / cfg.get("assets", "assets")).resolve()
+    assets = {f.stem: json.loads(f.read_text()) for f in asset_dir.glob("*.json")} if asset_dir.exists() else {}
     timeline = json.loads((video / "build" / "timeline.json").read_text())
     page.evaluate("([t, a]) => { window.TIMELINE = t; window.ASSETS = a; }", [timeline, assets])
+    for inc in cfg.get("include", []):
+        page.evaluate("src => loadScenes(src)", (video / inc).resolve().as_uri())
     page.evaluate("src => loadScenes(src)", (video / "scenes.js").resolve().as_uri())
     page.evaluate("document.fonts.load('600 40px Fraunces').then(() => document.fonts.load('500 30px Inter')).then(() => document.fonts.ready)")
     info = page.evaluate("setup()")
